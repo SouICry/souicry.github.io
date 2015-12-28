@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owl Sync carousel Example</title>
+    <link rel="stylesheet" href="owl.carousel.css">
+
+</head>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .thumbs {
+        position: fixed;
+        top: 150px;
+        left: 0;
+        z-index: 999;
+        pointer-events: none;
+        overflow: visible;
+    }
+
+    .thumbs .owl-item {
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .slide {
+        background-color: gray;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .slider .owl-item {
+        width: 100vw;
+    }
+
+    .nav-item {
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+    }
+
+    .owl-prev, .owl-next {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .owl-prev {
+        left: 0;
+    }
+
+    .owl-next {
+        right: 0;
+    }
+
+    .owl-carousel {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    h1 {
+        margin: 0;
+    }
+</style>
+<body>
+<div class="thumbs">
+    <div class="nav-item"><a class="nav-item" data-hash="a0">1</a></div>
+    <div class="nav-item"><a class="nav-item" data-hash="a1">2</a></div>
+    <div class="nav-item"><a class="nav-item" data-hash="a2">3</a></div>
+    <div class="nav-item"><a class="nav-item" data-hash="a3">4</a></div>
+    <div class="nav-item"><a class="nav-item" data-hash="a4">5</a></div>
+    <div class="nav-item"><a class="nav-item" data-hash="a5">6</a></div>
+</div>
+<div class="slider">
+    <div class="slide" data-hash="a0"><h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1>
+
+        <h1>1</h1></div>
+    <div class="slide" data-hash="a1">2</div>
+    <div class="slide" data-hash="a2">3</div>
+    <div class="slide" data-hash="a3">4</div>
+    <div class="slide" data-hash="a4">5</div>
+    <div class="slide" data-hash="a5">6</div>
+</div>
+
+<script src="jquery2.1.1.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+
+        var $sync1 = $(".slider"),
+                $sync2 = $(".thumbs"),
+                flag = false,
+                duration = 300;
+
+        $sync1
+                .owlCarousel({
+                    items: 1,
+                    nav: true,
+                    autoWidth: false,
+                    URLhashListener: true,
+                })
+                .on('changed.owl.carousel', function (e) {
+                    if (!flag) {
+                        flag = true;
+                        //location.href=location.pathname + "#a + e.item.index;
+                        //$sync2.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                        location.href = location.pathname + "#a" + e.item.index;
+                        flag = false;
+                    }
+                });
+
+        $sync2
+                .owlCarousel({
+                    autoWidth: true,
+                    center: true,
+                    URLhashListener: true,
+                })
+                .on('click', '.owl-item', function () {
+                    location.href = location.pathname + "#a" + $(this).index();
+                    //$sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
+                    //history.pushState(null, "", location.pathname + "#a" + $(this).index());
+                })
+                .on('changed.owl.carousel', function (e) {
+
+                    if (!flag) {
+                        flag = true;
+                        //$sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                        location.href = location.pathname + "#a" + e.item.index;
+                        flag = false;
+                    }
+                });
+    });
+</script>
+</body>
+</html>
