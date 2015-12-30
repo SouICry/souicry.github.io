@@ -1,59 +1,597 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>I'll be back soon</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            height: 100vh;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .content {
-            z-index: 100;
-            width: 100%;
-            position: relative;
-            color: white;
-        }
-
-        .content > * {
-            max-width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-
-        a {
-            color: deepskyblue;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    <title>Owl Sync carousel Example</title>
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="picturefill.js"></script>-->
 </head>
-<body style="background-color: black;">
 
-<div class="content">
-    <img  src="logo.png"/>
+<body>
+<div id="mask">
+</div>
 
-    <h2>Guyue Zhou - Software and web developer</h2>
+<div class="nav">
+    <div data-hash="Home" class="nav-item">
+        <div>Home</div>
+    </div>
+    <div data-hash="About" class="nav-item">
+        <div>About</div>
+    </div>
+    <!--<div data-hash="Projects" class="nav-item">
+        <div>Projects</div>
+    </div>-->
+    <div data-hash="Excel_SQL" class="nav-item">
+        <div>Excel SQL</div>
+    </div>
+    <div data-hash="Code_Orange" class="nav-item">
+        <div>Code Orange</div>
+    </div>
+    <div data-hash="JSObject" class="nav-item">
+        <div>JSObject</div>
+    </div>
+    <div data-hash="Dr_Eric" class="nav-item">
+        <div>Dr Eric</div>
+    </div>
+</div>
+<div class="slider">
+    <div class="slide Home" data-hash="Home">
+        <div class="page-wrapper">
+            <div class="content-wrapper">
+                <div class="content-box">
+                    <div class="title-box">
+                        <img style="max-width: 600px;margin: auto;" src="img/logo.jpg"/>
 
-    <p>12/28/15: Took the site down for an emergency fix. Should be up by tomorrow morning latest.
-    </p>
-<p><a href="//github.com/SouICry">Github</a></p>
-        <a style="margin-left: -16px;" href="//github.com/SouICry"><img style="width: 32px;" src="github1.png"/></a>
+                        <div class="title">
+                            Guyue Zhou
+                        </div>
+                        <div class="subtitle">
+                            - Web and software developer
+                        </div>
+                    </div>
+                    <a href="#About" class="frontpage-button">
+                        ❯
+                    </a>
+
+                    <div class="hint">
+                        Drag or swipe left to begin
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide About" data-hash="About">
+        <div class="nav-strip"></div>
+        <div class="cover-left"></div>
+        <div class="cover-right"></div>
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col-2">
+                    <h1>Hi, I'm Guyue!</h1>
+
+                    <p>I am a second year CS student at UCSD.</p>
+
+                    <p>And I love coding <3!!</p>
+
+                    <p>I've done a lot of web and software development. </p>
+
+                    <p>I have experience with both front and back end web design and development,
+                        mainly using vanilla Javascript/jQuery for front end, with some experience in ReactJS.
+                        For back end, most of my work has been in PHP and .NET.</p>
+
+                    <p>As for software, I've made applications and games in Java and C#.</p>
+
+                    <p>I've highlighted a few of my projects in the rest of this site.
+                        For more information, please feel free to see the links below or contact me.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tags">
+                    <a class="tag" href="mailto:gzhou.email@gmail.com">gzhou.email@gmail.com</a>
+                    <a class="tag" href="Guyue-Zhou-Resume.pdf">Resume</a>
+                    <a class="tag" href="//github.com/SouICry">
+                        <img src="img/github.png" class="icon"/>GitHub
+                    </a>
+                    <a class="tag" href="//www.linkedin.com/in/guyue-zhou-58a37776">
+                        <img src="img/linkedin.png" class="icon">LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="end">
+                <p></p>
+            </div>
+        </div>
+        <div class="mobile-filler"></div>
+        <div class="mobile-left">
+            <div class="name">Home</div>
+            <div class="arrow">❮</div>
+        </div>
+        <div class="mobile-right">
+            <div class="arrow">❯</div>
+            <div class="name">Excel SQL</div>
+        </div>
+    </div>
+    <!--div class="slide Projects" data-hash="Projects">
+        <div class="nav-strip"></div>
+        <div class="cover-left"></div>
+        <div class="cover-right"></div>
+        <div class="page-wrapper">
+            <div class="row">
+                <h1>Projects</h1>
+            </div>
+            <div class="row">
+                <div class="blocks">
+                    <div class="block-2">
+                        <div class="block-inner">
+                            <div class="item">
+                                Item name
+                            </div>
+                            <div class="description">
+                                Description long long long
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-2">
+                        <div class="block-inner">
+                            <div class="item">
+                                Item name
+                            </div>
+                            <div class="description">
+                                Description long long long
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-2">
+                        <div class="block-inner">
+                            <div class="item">
+                                Item name
+                            </div>
+                            <div class="description">
+                                Description long long long
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-2">
+                        <div class="block-inner">
+                            <div class="item">
+                                Item name
+                            </div>
+                            <div class="description">
+                                Description long long long
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <p></p>
+            </div>
+        </div>
+        <div class="mobile-filler"></div>
+        <div class="mobile-left">
+            <div class="name">About</div>
+            <div class="arrow">❮</div>
+        </div>
+        <div class="mobile-right">
+            <div class="arrow">❯</div>
+            <div class="name">Excel SQL</div>
+        </div>
+    </div-->
+    <div class="slide Excel_SQL" data-hash="Excel_SQL">
+        <div class="nav-strip"></div>
+        <div class="cover-left"></div>
+        <div class="cover-right"></div>
+        <div class="page-wrapper">
+            <div class="row">
+                <h1>Excel PivotTable SQL Migrater</h1>
+            </div>
+            <div class="row">
+                <div class="tags">
+                    <div class="tag">.NET</div>
+                    <div class="tag">C#</div>
+                    <div class="tag">SQL</div>
+                    <div class="tag">Closed Source</div>
+                </div>
+            </div>
+            <div class="row">
+                <p>During my summer 2015 internship, I created this program to automate the migration of Excel
+                    PivotTable
+                    sources from an old database to a new one. Since the tables are used in every day business, it was
+                    crucial they immediately function correctly after update.
+                </p>
+
+                <p>These pivot tables each contained a connection string that specified how to connect to
+                    the database, and a SQL command string to query the data. Each file could contain multiple
+                    of these connections as well.</p>
+
+                <p>Updating the connection strings was relatively easy, but modifiying the SQL queries
+                    was quite complicated. Many commands contained multiple nested queries, and I could not find an open
+                    source library that
+                    could accurately parse it. Not only did table names change, but many tables were merged,
+                    views were removed and added, and certain columns were also removed or added.</p>
+
+                <img src="img/excel-sql-query-migration-tool.jpg"/>
+
+                <p>In the end, I wrote a custom SQL parser that analyzed the structure of the SQL query, distinguishing
+                    all major components as specified in the T-SQL standard.</p>
+
+                <p>It also analyzed each pertinent part, including the flow of all the different join types (left,
+                    right, full, inner, outer, cross, etc)
+                    as well as the convoluted naming schemes of tables, columns and aliases, many of which were repeated
+                    and conflicted with each other.</p>
+
+                <p>With the information from the analysis, table merges and column changes were applied, and logic
+                    modifications
+                    to the AND statement were made. Table naming conventions were standardized, and other parts of the
+                    code were also cleaned up.</p>
+
+                <p>The program functioned wonderfully, correctly migrating all the Excel tables.</p>
+
+                <p>The source code totaled around 5000 lines, with the parsing and editing logic spanning over 2000
+                    lines excluding comments.</p>
+
+                <p>Unfortunately, I am not permitted to release the source code to the public. You can contact my
+                    manager about it however; just email me a request for the contact info.
+                </p>
+            </div>
+            <div class="end">
+                <p></p>
+            </div>
+        </div>
+        <div class="mobile-filler"></div>
+        <div class="mobile-left">
+            <div class="name">About</div>
+            <div class="arrow">❮</div>
+        </div>
+        <div class="mobile-right">
+            <div class="arrow">❯</div>
+            <div class="name">Code Orange</div>
+        </div>
+    </div>
+    <div class="slide Code_Orange" data-hash="Code_Orange">
+        <div class="nav-strip"></div>
+        <div class="cover-left"></div>
+        <div class="cover-right"></div>
+        <div class="page-wrapper">
+            <div class="row">
+                <h1>Code Orange Website</h1>
+            </div>
+
+            <div class="row">
+                <div class="tags">
+
+                    <div class="tag">JavaScript</div>
+                    <div class="tag">CSS/HTML</div>
+                    <div class="tag">PHP</div>
+                    <a class="tag" href="//github.com/SouICry/Code-Orange-Site-V2">
+                        <img class="icon" src="img/github.png"/>GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <p></p>
+
+                <p>Back in high school, I was on the <i>FIRST</i> Robotics team Code Orange, and have since become
+                    a college mentor. As one of the technical mentors, I assist the students on robot design and
+                    construction,
+                    placing top 8 in the world as a team in 2015.</p>
+
+                <p>
+                    Aside from robots, I also mentor the students on web development and still maintain and build the
+                    team website. So far I've made two versions of the site:
+                </p>
+
+                <h2>Current Update</h2>
+                <img style="max-width: 600px;" src="img/code-orange-1.jpg"/>
+
+                <p>
+                    I began working on a newer version of the site in late 2015, using vanilla JavaScript for the front
+                    end and the client side router, and jQuery and PHP for the CMS and editor. You can preview the site
+                    at
+                    <a href="//v2.teamcodeorange.com">v2.teamcodeorange.com</a>.
+                </p>
+
+                <p>This version contains a fully ajax loaded user interface that functions perfectly
+                    across all device types. It is implemented using a custom client side JavaScript router
+                    with full browser history support. Individuals pages are also cached separately.
+                </p>
+                <img src="img/code-orange-2.jpg"/>
+
+                <p>
+                    The site also contains a custom built CMS and powerful inline drag-and-drop editor, allowing
+                    non-coding admins to manage and edit every component and every piece of content on every page, all
+                    through
+                    simple drag and drop.
+                </p>
+
+                <img src="img/code-orange-3.jpg"/>
+
+                <p>So far I have finished all of the front end design
+                    and development, as well as most of the back end, except for a few parts related to the live server
+                    configurations of the file manager and uploader.
+                </p>
+
+                <h2>Previous Version</h2>
+
+                <p>
+                    Senior year of high school I completed my first version of the site, available live or at
+                    <a href="//old.teamcodeorange.com"> old.teamcodeorange.com </a>.
+                </p>
+                <img src="img/code-orange-5.jpg"/>
+
+                <p>
+                    The site is fully responsive and optimized for all device types
+                </p>
+                <img src="img/code-orange-4.jpg"/>
+            </div>
+            <div class="end">
+                <p></p>
+            </div>
+        </div>
+        <div class="mobile-filler"></div>
+        <div class="mobile-left">
+            <div class="name">Excel SQL</div>
+            <div class="arrow">❮</div>
+        </div>
+        <div class="mobile-right">
+            <div class="arrow">❯</div>
+            <div class="name">JSObject</div>
+        </div>
+    </div>
+    <div class="slide JSObject" data-hash="JSObject">
+        <div class="nav-strip"></div>
+        <div class="cover-left"></div>
+        <div class="cover-right"></div>
+        <div class="page-wrapper">
+            <div class="row">
+                <h1>JSObject for Unity C#</h1>
+            </div>
+            <div class="row">
+                <div class="tags">
+
+                    <div class="tag">C#</div>
+                    <div class="tag">Unity</div>
+                    <a class="tag" href="//github.com/SouICry/JSObject_For_Unity_CSharp2">
+                        <img class="icon" src="img/github.png"/>GitHub
+                    </a></div>
+            </div>
+            <div class="row">
+                <p>While I was working on a cross platform game in Unity in C#, I ran into a problem. My team
+                    intended to store game data in JSON format, but since Unity ships with the Mono
+                    2.0
+                    compiler, there were no built in dynamic data types to hold JSON
+                    objects (dynamic type was introduced in
+                    C# 4.0). While open source parsers were available, to avoid have each sub-team build their own
+                    custom
+                    data interface logic, I created a small library called JSObject
+                    as a drop in replacement for JavaScript style objects. </p>
+
+                <p>
+                    The JSObject type accepts any valid JavaScript type implicitly, storing properties as
+                    Dictionaries and
+                    arrays as List. I intended it to function as any var would, implicitly supporting all
+                    standard operator and data types, while keeping track of its current type and correctly implicitly
+                    converting to standard C# types. Support for the open source JSONObject parser is provided through
+                    the
+                    JSONParser class I created.
+                </p>
+
+                <p>
+                    Example usage:
+                </p>
+
+                <p>
+                    <code>Random rnd = new Random();</code>
+                    <code>JSObject characters = JSONParser.parseFile("characters.json");</code>
+                    <code>JSObject john = characters["John"];</code><code>
+                    if (john["age"] >= 18){</code><code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;String message = john["happyMessages"][rnd.next(0,
+                    john["happyMessages"].Count());</code><code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Face face = new Face(john["happyFace"]);</code><code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return new Action(message, face);</code><code>
+                    }</code><code>
+                    else {</code><code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return new Action(null, new Face(john["sadFace"]);</code><code>
+                    }</code>
+                </p>
+            </div>
+            <div class="end">
+                <p></p>
+            </div>
+        </div>
+        <div class="mobile-filler"></div>
+        <div class="mobile-left">
+            <div class="name">Code Orange</div>
+            <div class="arrow">❮</div>
+        </div>
+        <div class="mobile-right">
+            <div class="arrow">❯</div>
+            <div class="name">Dr. Eric</div>
+        </div>
+    </div>
+    <div class="slide Dr_Eric" data-hash="Dr_Eric">
+        <div class="nav-strip"></div>
+        <div class="cover-left"></div>
+        <div class="cover-right"></div>
+        <div class="page-wrapper">
+            <div class="row">
+                <h1>Dr. Eric's Psychedelic Wonderland</h1>
+            </div>
+            <div class="row">
+                <div class="tags">
+                    <div class="tag">C#</div>
+                    <div class="tag">Unity</div>
+                    <a class="tag" href="//github.com/GameDevStudioUCSD/DrEric">
+                        <img class="icon" src="img/github.png"/>GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <p>Since late 2015, I've been working on a 2D puzzle based platform game with some other friends at
+                    UCSD,
+                    called
+                    Dr. Eric's Psychedelic Wonderland. We building it in Unity using C#. I've mainly worked on UI
+                    and
+                    dialogue, among other components.
+                </p>
+
+                <p>
+                    Here is a work in progress image of the loading screen:
+                </p>
+                <img src="img/dreric1.jpg"/>
+
+                <p>
+                    And here is an early prototype of a boss stage:
+                </p>
+                <img src="img/dreric2.jpg"/>
+            </div>
+            <div class="end">
+                <p></p>
+            </div>
+        </div>
+        <div class="mobile-filler"></div>
+        <div class="mobile-left">
+            <div class="name">JSObject</div>
+            <div class="arrow">❮</div>
+        </div>
+    </div>
 
 </div>
 
-<div id="stars"></div>
-<div id="stars1"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
+<div class="owl-controls">
+    <div class="owl-nav">
+        <div class="owl-prev">
+            <div class="name"></div>
+            <div class="arrow">❮</div>
+        </div>
+        <div class="owl-next">
+            <div class="arrow">❯</div>
+            <div class="name"></div>
+        </div>
+    </div>
+</div>
+<script src="jquery2.1.1.js"></script>
+<script src="owl.carousel.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        $('#mask').css('opacity', '0');
+        setTimeout(function () {
+            $('#mask').css('display', 'none');
+        }, 2100);
+    });
+
+    var pageTitles = ["Home", "About", /*"Projects",*/ "Excel_SQL", "Code_Orange", "JSObject", "Dr_Eric"];
+    var pageNames = ["Home", "About", /*"Projects",*/ "Excel SQL", "Code Orange", "JSObject", "Dr Eric"];
+    var navControl = [0, 1, /*1,*/ 1, 1, 1, 1];
+    var prevControl = [0, 1, /*1,*/ 1, 1, 1, 1];
+    var nextControl = [0, 1, /*1,*/ 1, 1, 1, 0];
+    var currentIndex = 0;
+
+    jQuery(document).ready(function ($) {
+
+        var $sync1 = $(".slider"),
+                $sync2 = $(".nav"),
+                navItems = $($sync2).children(),
+                prevButton = $(".owl-prev"),
+                nextButton = $(".owl-next"),
+                prevCover = $(".cover-left"),
+                nextCover = $(".cover-right"),
+                prevName = $(prevButton).find(".name"),
+                nextName = $(nextButton).find(".name"),
+                activeItem = navItems[0];
+
+
+        $(prevButton).hover(function () {
+            $(prevButton).addClass("show");
+            $(prevCover).addClass("show");
+        }, function () {
+            $(prevButton).removeClass("show");
+            $(prevCover).removeClass("show");
+        });
+        $(nextButton).hover(function () {
+            $(nextButton).addClass("show");
+            $(nextCover).addClass("show");
+        }, function () {
+            $(nextButton).removeClass("show");
+            $(nextCover).removeClass("show");
+        });
+
+        function loadPage(index) {
+            currentIndex = index;
+            $(navItems).removeClass("current");
+            activeItem = navItems[index];
+            $(activeItem).addClass('current');
+            if (arguments.length < 2) {
+                location.href = location.pathname + "#" + pageTitles[index];
+            }
+            if (prevControl[index]) {
+                $(prevButton).removeClass("hidden");
+                $(prevCover).removeClass("hidden");
+                $(prevName).html(pageNames[index - 1]);
+            }
+            else {
+                $(prevButton).addClass("hidden");
+                $(prevCover).addClass("hidden");
+            }
+            if (nextControl[index]) {
+                $(nextButton).removeClass("hidden");
+                $(nextCover).removeClass("hidden");
+                $(nextName).html(pageNames[index + 1]);
+            }
+            else {
+                $(nextButton).addClass("hidden");
+                $(nextCover).addClass("hidden");
+            }
+            if (navControl[index]) {
+                $($sync2).removeClass("hidden");
+            }
+            else {
+                $($sync2).addClass("hidden");
+            }
+        }
+
+        history.replaceState(null, "", location.pathname + "#" + pageTitles[0]);
+        loadPage(0, false);
+
+        $(prevButton).click(function () {
+            if (currentIndex > 0) loadPage(currentIndex - 1);
+        });
+        $(nextButton).click(function () {
+            if (currentIndex < pageTitles.length) loadPage(currentIndex + 1);
+        });
+        $(".mobile-left").click(function () {
+            if (currentIndex > 0) loadPage(currentIndex - 1);
+        });
+        $(".mobile-right").click(function () {
+            if (currentIndex < pageTitles.length) loadPage(currentIndex + 1);
+        });
+
+        $sync1
+                .owlCarousel({
+                    items: 1,
+                    autoWidth: false,
+                    URLhashListener: true,
+                })
+                .on('changed.owl.carousel', function (e) {
+                    loadPage(e.item.index);
+                });
+
+        $sync2
+                .owlCarousel({
+                    autoWidth: true,
+                    center: true,
+                    URLhashListener: true,
+                })
+                .on('click', '.owl-item', function () {
+                    loadPage($(this).index());
+                });
+    });
+</script>
 </body>
 </html>
