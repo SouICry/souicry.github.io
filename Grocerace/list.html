@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+    var itemlist = [];
+    var totalgrocerylist = ['water','energy drinks', 'bottled soda', 'soda cans', 'candy','utensils','chips','popcorn','toppings','popsicles','ice cream','pies', 'frozen fish','frozen vegetables','tv dinners','frozen pizza','apples','buns','bread','cookies','cake','oranges' ];
+    var buffer;
+    $(document).ready(function(){
+        $("#addbutton").click(function(){
+            addItem();
+        });
+    });
+    $(function() {
+        updateBuffer();
+    });
+    $(document).keypress(function (e) {
+        if(e.which ==13){
+            addItem();
+        }
+    });
+
+    function updateBuffer() {
+        buffer = totalgrocerylist;
+        for (var i = 0; i < itemlist.length; i++) {
+            buffer = jQuery.grep(buffer, function(value){
+                return value != itemlist[i];
+            });
+            console.log("buffer = " + buffer)
+        };
+        var availableTags = buffer;
+        $( "#tags" ).autocomplete({
+          source: availableTags
+      });
+    }
+
+    function addItem() {
+        var input = $("#tags").val().toLowerCase();
+
+        if ($.inArray(input, buffer) != -1 ) {
+            itemlist.push(input);
+            $("#itemlister").html(itemlist);
+            $("#tags").val("");
+            updateBuffer();
+        }
+        else {
+            if ($.inArray($("#tags").val(), itemlist) != -1)
+                window.alert("You already added that item!")
+            else window.alert("Item not in catalog")
+        }
+}
+
+function removeItem(removeditem) {
+    itemlist = jQuery.grep(itemlist, function(value){
+        return value != removeditem;
+    });
+    
+}
+</script>
+
+
+
+
+
+<h1> Create Your List </h1>
+</head>
+<body>
+
+
+    <div class="ui-widget">
+      <label for="tags">Item: </label>
+      <input type = 'text' id="tags">
+  </div>
+  <p>  
+    <button id = "addbutton">Add</button>
+</p>
+
+
+<p id = "itemlister">  </p>
+
+<p > <button>Next</button> </p>
+</body>
+</html>

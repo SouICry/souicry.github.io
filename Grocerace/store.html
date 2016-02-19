@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <head>
+  <link rel="stylesheet" href="css/materialize.min.css"/>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #b0bec5;
+      }
+      #map {
+        height: 720px;
+      }
+      #textstuff {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+      }
+    </style>
+    <script>
+// This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+var map;
+var infowindow;
+var storelist;
+navigator.geolocation.getCurrentPosition();
+function initMap() {
+
+  var pyrmont = {lat: 32.84, lng: -117.2769};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: pyrmont,
+    zoom: 15
+  });
+
+  infowindow = new google.maps.InfoWindow();
+
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch({
+    location: pyrmont,
+    radius: 1000,
+    types: ['grocery_or_supermarket']
+  }, callback);
+}
+
+function callback(results, status) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+}
+
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name)
+    storelist = place.name;
+    console.log(storelist)
+    $("#textstuff").text(storelist)
+    infowindow.open(map, this);
+  });
+}
+
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtRAOut0Iqd_pI-dOyWMCUAneIUF62moU&signed_in=true&libraries=places&callback=initMap" async defer></script>
+    <div id="textstuff">Safeway</div>
+  </body>
+</html>

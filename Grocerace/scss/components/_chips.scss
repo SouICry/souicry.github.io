@@ -1,0 +1,28 @@
+.chip {
+  display: inline-block;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0,0,0,.6);
+  line-height: 40px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: $chip-bg-color;
+
+  img {
+    float: left;
+    margin: 0 8px 0 -12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+
+  i.material-icons {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 8px;
+  }
+  margin: 5px;
+}
