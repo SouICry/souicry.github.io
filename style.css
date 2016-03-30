@@ -1516,7 +1516,7 @@ img {
   height: 100vh;
   background-color: #adc4cc;
   opacity: 1;
-  transition: all 3s;
+  transition: all 4s;
   pointer-events: none; }
 
 .slide.Home {
