@@ -12,6 +12,7 @@
 
 <body>
 <div id="mask">
+    <div id="loading">loading...</div>
 </div>
 
 <div class="nav">
@@ -83,6 +84,8 @@
                         mainly using vanilla Javascript/jQuery for front end, and PHP and .NET for back end.</p>
 
                     <p>As for software, I've made applications and games in Java and C#.</p>
+
+                    <p>I've highlighted a few of my projects in the next few pages.</p>
                 </div>
 
                 <h2>Notable Experiences</h2>
@@ -517,6 +520,7 @@
 <script>
     jQuery(document).ready(function () {
         $('#mask').css('opacity', '0');
+        $('#loading').css('display', 'none');
         setTimeout(function () {
             $('#mask').css('display', 'none');
         }, 2100);
