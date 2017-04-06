@@ -3,12 +3,25 @@
 * {
 	margin: 0;
 }
+body {
+	height: 100vh;
+	overflow: hidden;
+}
+#f {
+	height: calc(100vh + 30px);
+	width: 100vw;
+}
+#frame {
+	width: 100%;
+	height: 100%;
+}
 </style>
 
-<iframe id = "frame" src="https://docs.google.com/presentation/d/1xRCXkqlt6hraFn54BO9Ctth11IgTM59NtC0mYe2OTPs/embed?start=false&loop=false&delayms=60000" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
+<div id="f">
+<iframe id = "frame" src="https://docs.google.com/presentation/d/1xRCXkqlt6hraFn54BO9Ctth11IgTM59NtC0mYe2OTPs/embed?start=false&loop=false&delayms=60000" frameborder="0"  allowfullscreen="false" webkitallowfullscreen="false"></iframe>
+</div>
 <script>
-	document.getElementById('frame').width = window.innerWidth;
-	document.getElementById('frame').height = window.innerHeight;
+	
+
 
 </script>
