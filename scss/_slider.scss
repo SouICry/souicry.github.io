@@ -12,12 +12,12 @@
   .nav-item {
 
     font-family: monospace;
-    width: 170px;
+    width: 190px;
     height: 60px;
     padding: 0 10px;
 
     @include desktop {
-      width: 200px;
+      width: 220px;
       padding: 0 25px;
     }
 
@@ -25,7 +25,7 @@
       margin-top: 5px;
       background-color: rgba(255, 255, 255, 0);
       height: 50px;
-      width: 150px;
+      width: 170px;
       border-style: dashed;
       border-color: rgba(0, 0, 0, 0.5);
       border-width: 3px;
@@ -36,17 +36,21 @@
       text-align: center;
     }
   }
+
   .nav-item.current div {
     opacity: 1;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
     font-size: 17px;
+    transform: scale(1.1);
   }
+
   .nav-item:hover div {
     opacity: 1;
     border-style: solid;
     font-size: 17px;
+    transform: scale(1.1);
   }
 
   .owl-item {
@@ -72,7 +76,7 @@
   position: fixed;
   top: calc(50% - 50px);
   border: 3px dashed rgba(0, 0, 0, 0.5);
-  width: 210px;
+  width: 220px;
   height: 100px;
   transition: all 0.5s;
   white-space: nowrap;
@@ -80,7 +84,7 @@
 
 .owl-prev {
   left: 0;
-  transform: translateX(-150px);
+  transform: translateX(-160px);
   border-radius: 0 50px 50px 0;
   .arrow {
     text-align: start;
@@ -89,7 +93,7 @@
 
 .owl-next {
   right: 0;
-  transform: translateX(150px);
+  transform: translateX(160px);
   border-radius: 50px 0 0 50px;
   float: left;
   .arrow {
@@ -139,6 +143,13 @@
 }
 .owl-prev:hover .arrow, .owl-next:hover .arrow {
   color: rgba(0,0,0,1);
+}
+
+.owl-next .arrow{
+  margin-right: 10px;
+}
+.owl-prev .arrow{
+  margin-left: 10px;
 }
 
 .slider {

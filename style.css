@@ -1132,18 +1132,18 @@ h1 {
       top: 10px; } }
   .nav .nav-item {
     font-family: monospace;
-    width: 170px;
+    width: 190px;
     height: 60px;
     padding: 0 10px; }
     @media (min-width: 1024px) {
       .nav .nav-item {
-        width: 200px;
+        width: 220px;
         padding: 0 25px; } }
     .nav .nav-item div {
       margin-top: 5px;
       background-color: rgba(255, 255, 255, 0);
       height: 50px;
-      width: 150px;
+      width: 170px;
       border-style: dashed;
       border-color: rgba(0, 0, 0, 0.5);
       border-width: 3px;
@@ -1157,11 +1157,13 @@ h1 {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
-    font-size: 17px; }
+    font-size: 17px;
+    transform: scale(1.1); }
   .nav .nav-item:hover div {
     opacity: 1;
     border-style: solid;
-    font-size: 17px; }
+    font-size: 17px;
+    transform: scale(1.1); }
   .nav .owl-item {
     cursor: pointer;
     pointer-events: auto; }
@@ -1181,21 +1183,21 @@ h1 {
   position: fixed;
   top: calc(50% - 50px);
   border: 3px dashed rgba(0, 0, 0, 0.5);
-  width: 210px;
+  width: 220px;
   height: 100px;
   transition: all 0.5s;
   white-space: nowrap; }
 
 .owl-prev {
   left: 0;
-  transform: translateX(-150px);
+  transform: translateX(-160px);
   border-radius: 0 50px 50px 0; }
   .owl-prev .arrow {
     text-align: start; }
 
 .owl-next {
   right: 0;
-  transform: translateX(150px);
+  transform: translateX(160px);
   border-radius: 50px 0 0 50px;
   float: left; }
   .owl-next .arrow {
@@ -1235,6 +1237,12 @@ h1 {
 
 .owl-prev:hover .arrow, .owl-next:hover .arrow {
   color: black; }
+
+.owl-next .arrow {
+  margin-right: 10px; }
+
+.owl-prev .arrow {
+  margin-left: 10px; }
 
 .slider .slide {
   background-color: gray;
@@ -1525,11 +1533,14 @@ img {
 .slide.About {
   background-color: #92b06a; }
 
-.slide.Projects {
-  background-color: #db704d; }
+.slide.Facebook {
+  background-color: #509ab3; }
+
+.slide.Google {
+  background-color: #509ab3; }
 
 .slide.Excel_SQL {
-  background-color: #509ab3; }
+  background-color: #db704d; }
 
 .slide.Code_Orange {
   background-color: #e0a038; }
@@ -1543,6 +1554,7 @@ img {
 .page-wrapper {
   position: relative;
   width: 100%;
+  height: 100vh;
   overflow-x: visible;
   display: block;
   margin: auto;
@@ -1554,6 +1566,7 @@ img {
     padding-top: 100px;
     padding-bottom: 100px; } }
 .content-wrapper {
+  height: calc(100vh - 200px);
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1561,7 +1574,6 @@ img {
 .content-box {
   padding: 10px;
   max-width: 800px;
-  margin: auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -1647,7 +1659,8 @@ img {
 
 .hint {
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 0 20px; }
 
 p, .content-section li, .tags, .timeline {
   overflow-x: auto;
@@ -1716,15 +1729,16 @@ a.tag img.icon {
   width: 100%; }
 
 .mobile-left, .mobile-right {
+  font-size: 16px;
   font-family: monospace;
   border: 3px dashed rgba(0, 0, 0, 0.5);
-  width: 158px;
+  width: 180px;
   height: 80px;
   transition: all 0.5s;
   white-space: nowrap;
   margin: 20px 0; }
   .mobile-left .name, .mobile-right .name {
-    width: 112px;
+    width: 142px;
     height: 74px;
     line-height: 74px;
     float: left;
@@ -1746,6 +1760,7 @@ a.tag img.icon {
   border-radius: 0 50px 50px 0;
   border-left: none; }
   .mobile-left .arrow {
+    margin-left: 2px;
     text-align: start; }
 
 .mobile-right {
@@ -1753,6 +1768,7 @@ a.tag img.icon {
   border-right: none;
   float: right; }
   .mobile-right .arrow {
+    margin-right: 5px;
     text-align: end; }
 
 .timeline {
