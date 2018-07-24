@@ -52,6 +52,10 @@ $orange: rgb(224, 160, 56);
 @function  orange($a){
   @return rgba(224, 160, 56, $a);
 }
+$yellow: rgb(224, 224, 121);
+@function  yellow($a){
+  @return rgba(224, 224, 121, $a);
+}
 $red: rgb(219, 112, 77);
 @function  red($a){
   @return rgba(219, 112, 77, $a);

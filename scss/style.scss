@@ -17,6 +17,19 @@ html {
   background-color: $light-blue;
 }
 
+.vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 img {
   width: auto;
   max-width: 100%;
@@ -109,7 +122,7 @@ img {
 }
 
 .slide.Google {
-  background-color: $blue;
+  background-color: $yellow;
 }
 
 .slide.Excel_SQL {
@@ -120,13 +133,14 @@ img {
   background-color: $orange;
 }
 
-.slide.JSObject {
+.slide.Dr_Eric {
   background-color: $light-purple;
 }
 
-.slide.Dr_Eric {
-  background-color: $red;
+.slide.JSObject {
+  background-color: $green;
 }
+
 
 .page-wrapper {
   position: relative;
@@ -323,7 +337,8 @@ p {
 }
 
 a {
-  color: black;
+  color: #333333;
+  font-weight: bolder;
   text-decoration: underline;
   &:hover {
     text-decoration: underline;

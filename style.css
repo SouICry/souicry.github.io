@@ -1210,11 +1210,11 @@ h1 {
   transform: translateX(220px); }
 
 .owl-prev.show {
-  transform: translateX(-10px);
+  transform: translateX(-5px);
   border-style: solid; }
 
 .owl-next.show {
-  transform: translateX(10px);
+  transform: translateX(5px);
   border-style: solid; }
 
 @media (min-width: 1024px) {
@@ -1465,6 +1465,16 @@ html {
   font-size: 17px;
   background-color: #adc4cc; }
 
+.vid {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
+
 img {
   width: auto;
   max-width: 100%; }
@@ -1537,7 +1547,7 @@ img {
   background-color: #509ab3; }
 
 .slide.Google {
-  background-color: #509ab3; }
+  background-color: #e0e079; }
 
 .slide.Excel_SQL {
   background-color: #db704d; }
@@ -1545,11 +1555,11 @@ img {
 .slide.Code_Orange {
   background-color: #e0a038; }
 
-.slide.JSObject {
+.slide.Dr_Eric {
   background-color: #c39bde; }
 
-.slide.Dr_Eric {
-  background-color: #db704d; }
+.slide.JSObject {
+  background-color: #92b06a; }
 
 .page-wrapper {
   position: relative;
@@ -1710,7 +1720,8 @@ p, .content-section li, .tags, .timeline {
     margin: 10px;
     padding: 10px 30px; } }
 a {
-  color: black;
+  color: #333333;
+  font-weight: bolder;
   text-decoration: underline; }
   a:hover {
     text-decoration: underline; }
