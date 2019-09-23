@@ -428,6 +428,7 @@ function publishOwnFeed(useAudio) {
 					 publishOwnFeed(false);
 				} else {
 					bootbox.alert("WebRTC error... " + JSON.stringify(error));
+					console.log(error);
 					$('#publish').removeAttr('disabled').click(function() { publishOwnFeed(true); });
 				}
 			}
