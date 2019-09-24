@@ -43,10 +43,12 @@
 // the whole session.
 //
 var server = null;
+var url = "34.70.227.60";
+
 if(window.location.protocol === 'http:')
-	server = "http://" + window.location.hostname + ":8088/janus";
+	server = "http://" + url + ":8088/janus";
 else
-	server = "https://" + window.location.hostname + ":8089/janus";
+	server = "https://" + url + ":8089/janus";
 
 
 var janus = null;
