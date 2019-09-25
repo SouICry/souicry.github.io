@@ -44,7 +44,7 @@
 //
 
 var address = window.location.hostname;
-address = "34.70.227.60";
+address = "35.188.197.130";
 var server = "http://35.188.197.130/rtc";
 if(window.location.protocol === 'http:')
 	server = "http://" + address + ":8088/janus";

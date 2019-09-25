@@ -43,7 +43,7 @@
 // the whole session.
 //
 var server = "http://35.188.197.130/rtc";
-var url = "34.70.227.60";
+var url = "35.188.197.130";
 
 if(window.location.protocol === 'http:')
 	server = "http://" + url + ":8088/janus";
