@@ -4,7 +4,7 @@
 // refer to the guidelines there with respect to absolute vs. relative
 // paths and the like.
 //
-var server = null;
+var server = "http://35.188.197.130/rtc";
 if(window.location.protocol === 'http:')
 	server = "http://" + window.location.hostname + ":7088/admin";
 else

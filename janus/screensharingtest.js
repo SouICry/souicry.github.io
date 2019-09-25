@@ -42,7 +42,7 @@
 // in the presented order. The first working server will be used for
 // the whole session.
 //
-var server = null;
+var server = "http://35.188.197.130/rtc";
 var url = "34.70.227.60";
 
 if(window.location.protocol === 'http:')
