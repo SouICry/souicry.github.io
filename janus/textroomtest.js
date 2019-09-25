@@ -42,7 +42,7 @@
 // in the presented order. The first working server will be used for
 // the whole session.
 //
-var server = "http://34.67.216.203/rtc";
+var server = "http://35.188.197.130/rtc";
 
 var janus = null;
 var textroom = null;
