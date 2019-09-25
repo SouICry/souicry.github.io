@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/janus/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/audiobridgetest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/audiobridgetest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/devicetest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/devicetest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/echotest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/echotest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/nosiptest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/nosiptest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/recordplaytest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/recordplaytest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/janus/screensharingtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/screensharingtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/sipretest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/sipretest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/siptest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/siptest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/streamingtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/streamingtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/textroomtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/textroomtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/videocalltest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/videocalltest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/janus/videoroomtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/videoroomtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/voicemailtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/voicemailtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/vp9svctest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/vp9svctest.js" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +71,7 @@
             <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="211">
-                  <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+                  <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -69,8 +82,8 @@
           <file leaf-file-name="videoroomtest.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/janus/videoroomtest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+                <state relative-caret-position="202">
+                  <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
@@ -194,8 +207,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="159">
-                  <caret line="133" column="1" lean-forward="true" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+                <state relative-caret-position="312">
+                  <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
                 </state>
               </provider>
             </entry>
@@ -242,23 +255,26 @@
       <find>content-box</find>
       <find>hint</find>
       <find>content-</find>
-      <find>a {</find>
+      <find />
       <find>prev</find>
       <find>google</find>
       <find>getusermedia</find>
-      <find>webrtc error</find>
+      <find />
       <find>janus.js</find>
       <find>isGetUserMediaAvailable</find>
-      <find>var server = &quot;http://35.188.197.130/rtc&quot;;</find>
-      <find>var server = null;</find>
-      <find>if(window.location.protocol === 'http:') 	server = &quot;http://&quot; + window.location.hostname + &quot;:8088/janus&quot;; else 	server = &quot;https://&quot; + window.location.hostname + &quot;:8089/janus&quot;;</find>
-      <find>\nif\(window\.location\.protocol \=\=\= \'http\:\'\)\n\	server \= \&quot;http\:\/\/\&quot; \+ window\.location\.hostname \+ \&quot;\:8088\/janus\&quot;\;\nelse\n\	server \= \&quot;https\:\/\/\&quot; \+ window\.location\.hostname \+ \&quot;\:8089\/janus\&quot;\;</find>
+      <find />
+      <find />
+      <find />
+      <find />
       <find>34.70.227.60</find>
+      <find>:8088</find>
+      <find>35.188.197.130/rtc</find>
     </findStrings>
     <replaceStrings>
-      <replace>var server = &quot;http://35.188.197.130/rtc&quot;;</replace>
+      <replace />
       <replace />
       <replace>35.188.197.130</replace>
+      <replace>35.188.197.130/janus</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -295,7 +311,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1997" />
     <option name="y" value="131" />
     <option name="width" value="1936" />
@@ -424,19 +440,19 @@
       <workItem from="1532387985418" duration="12747000" />
       <workItem from="1537607784404" duration="38000" />
       <workItem from="1569275844704" duration="3672000" />
-      <workItem from="1569385313912" duration="1889000" />
+      <workItem from="1569385313912" duration="3140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21410000" />
+    <option name="totallyTimeSpent" value="22661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1997" y="131" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11727079" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11727079" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026042" side_tool="true" weight="0.3177471" />
@@ -444,7 +460,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32731137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" visible="true" weight="0.31699347" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" visible="true" weight="0.31699347" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -866,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="133" column="1" lean-forward="true" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/janus/textroomtest.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -938,17 +947,24 @@
     <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/janus/videoroomtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        <state relative-caret-position="202">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
