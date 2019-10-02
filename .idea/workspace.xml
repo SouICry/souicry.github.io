@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/janus/janus.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/janus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbrella-short/index.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/screensharingtest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/screensharingtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbit/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit/index.htm" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +26,29 @@
       <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="296" column="30" selection-start-line="296" selection-start-column="18" selection-end-line="296" selection-end-column="30" />
+            <state relative-caret-position="238">
+              <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="43" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbit/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="screensharingtest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -44,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="janus.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="janus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/janus/janus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="2211" column="35" lean-forward="true" selection-start-line="2211" selection-start-column="35" selection-end-line="2211" selection-end-column="35" />
+            <state relative-caret-position="127">
+              <caret line="2205" column="77" selection-start-line="2205" selection-start-column="13" selection-end-line="2205" selection-end-column="77" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -124,15 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="owl.carousel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/owl.carousel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -171,10 +180,10 @@
       <find>audio</find>
       <find>send =</find>
       <find>screentest</find>
-      <find>getusermedia</find>
       <find>.mediaDevices.getUserMedia</find>
       <find>getdisplaymedia</find>
       <find>getdisplaymedia(</find>
+      <find>getusermedia</find>
     </findStrings>
     <replaceStrings>
       <replace>var server = &quot;http://35.188.197.130/rtc&quot;;</replace>
@@ -209,6 +218,8 @@
         <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
         <option value="$PROJECT_DIR$/janus/videoroomtest.js" />
         <option value="$PROJECT_DIR$/janus/janus.js" />
+        <option value="$PROJECT_DIR$/ribbit/index.htm" />
+        <option value="$PROJECT_DIR$/ribbit/screensharingtest.html" />
       </list>
     </option>
   </component>
@@ -222,8 +233,8 @@
     <handled-path value="$PROJECT_DIR$/control/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1947" />
-    <option name="y" value="235" />
+    <option name="x" value="25" />
+    <option name="y" value="26" />
     <option name="width" value="1934" />
     <option name="height" value="1025" />
   </component>
@@ -254,6 +265,11 @@
             <path>
               <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="souicry.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="ribbit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="souicry.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -275,14 +291,15 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\scss" />
-      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\souicry.github.io" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SouICry\Desktop\souicry.github.io\img" />
       <recent name="C:\Users\SouICry\Desktop\souicry.github.io\scss" />
       <recent name="C:\Users\SouICry\Desktop\souicry.github.io" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\souic\Desktop\souicry.github.io\ribbit" />
+      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\scss" />
+      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\souicry.github.io" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,15 +369,15 @@
       <workItem from="1569275844704" duration="3672000" />
       <workItem from="1569385313912" duration="5735000" />
       <workItem from="1569811859117" duration="1924000" />
-      <workItem from="1569995405334" duration="2263000" />
+      <workItem from="1569995405334" duration="4133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29443000" />
+    <option name="totallyTimeSpent" value="31313000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1947" y="235" width="1934" height="1025" extended-state="0" />
+    <frame x="25" y="26" width="1934" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Remote Host" order="3" />
@@ -371,7 +388,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32731137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" weight="0.32013202" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" visible="true" weight="0.319053" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -399,20 +416,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/owl.carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_font.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -842,16 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="296" column="30" selection-start-line="296" selection-start-column="18" selection-end-line="296" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/janus/screensharingtest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -861,11 +854,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/janus/janus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="2211" column="35" lean-forward="true" selection-start-line="2211" selection-start-column="35" selection-end-line="2211" selection-end-column="35" />
+        <state relative-caret-position="127">
+          <caret line="2205" column="77" selection-start-line="2205" selection-start-column="13" selection-end-line="2205" selection-end-column="77" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
