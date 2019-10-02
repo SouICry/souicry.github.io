@@ -2204,25 +2204,36 @@ function Janus(gatewayCallbacks) {
 						media.screenshareFrameRate = 3;
 					}
 					if(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+						// Media audio mix, windows only
+            navigator.mediaDevices.getDisplayMedia({ video: true, audio: true })
+            	.then(function(stream) {
+            		pluginHandle.consentDialog(false);
+								streamsDone(handleId, jsep, media, callbacks, stream);
+            	}, function (error) {
+            		pluginHandle.consentDialog(false);
+            		callbacks.error(error);
+            	});
+
+
 						// The new experimental getDisplayMedia API is available, let's use that
 						// https://groups.google.com/forum/#!topic/discuss-webrtc/Uf0SrR4uxzk
 						// https://webrtchacks.com/chrome-screensharing-getdisplaymedia/
-						navigator.mediaDevices.getDisplayMedia({ video: true })
-							.then(function(stream) {
-								pluginHandle.consentDialog(false);
-								if(isAudioSendEnabled(media) && !media.keepAudio) {
-									navigator.mediaDevices.getUserMedia({ audio: true, video: false })
-									.then(function (audioStream) {
-										stream.addTrack(audioStream.getAudioTracks()[0]);
-										streamsDone(handleId, jsep, media, callbacks, stream);
-									})
-								} else {
-									streamsDone(handleId, jsep, media, callbacks, stream);
-								}
-							}, function (error) {
-								pluginHandle.consentDialog(false);
-								callbacks.error(error);
-							});
+						// navigator.mediaDevices.getDisplayMedia({ video: true})
+						// 	.then(function(stream) {
+						// 		pluginHandle.consentDialog(false);
+						// 		if(isAudioSendEnabled(media) && !media.keepAudio) {
+						// 			navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+						// 			.then(function (audioStream) {
+						// 				stream.addTrack(audioStream.getAudioTracks()[0]);
+						// 				streamsDone(handleId, jsep, media, callbacks, stream);
+						// 			})
+						// 		} else {
+						// 			streamsDone(handleId, jsep, media, callbacks, stream);
+						// 		}
+						// 	}, function (error) {
+						// 		pluginHandle.consentDialog(false);
+						// 		callbacks.error(error);
+						// 	});
 						return;
 					}
 					// We're going to try and use the extension for Chrome 34+, the old approach
