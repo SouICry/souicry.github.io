@@ -27,46 +27,5 @@
 </head>
 <body>
 
-<div class="page-header">
-    <button class="btn btn-default" autocomplete="off" id="start">Start</button>
-    </h1>
-</div>
-<div class="container hide" id="screenmenu">
-    <div class="row">
-        <div class="input-group margin-bottom-md hide" id="createnow">
-            <span class="input-group-addon"><i class="fa fa-users fa-1"></i></span>
-            <input class="form-control" type="text" placeholder="Insert a title for the session" autocomplete="off" id="desc" onkeypress="return checkEnterShare(this, event);"></input>
-            <span class="input-group-btn">
-							<button class="btn btn-success" autocomplete="off" id="create">Share your screen</button>
-						</span>
-        </div>
-    </div>
-    <div class="divider col-md-12">
-        <hr class="pull-left"/>or<hr class="pull-right"/>
-    </div>
-    <div class="row">
-        <div class="input-group margin-bottom-md hide" id="joinnow">
-            <span class="input-group-addon"><i class="fa fa-play-circle-o fa-1"></i></span>
-            <input class="form-control" type="text" placeholder="Insert the numeric session identifier" autocomplete="off" id="roomid" onkeypress="return checkEnterJoin(this, event);"></input>
-            <span class="input-group-btn">
-							<button class="btn btn-success" autocomplete="off" id="join">Join an existing session</button>
-						</span>
-        </div>
-    </div>
-</div>
-<div class="container hide" id="room">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Screen Capture <span class="label label-info" id="title"></span> <span class="label label-success" id="session"></span></h3>
-                </div>
-                <div class="panel-body" id="screencapture"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 </body>
 </html>

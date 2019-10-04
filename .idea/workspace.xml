@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ribbit/screensharingtest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbit/screensharingtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbit/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit/index.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbit/screensharingtest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbit/screensharingtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit/screensharingtest.js" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,121 +24,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="43" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbit/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="306">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screensharingtest.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.html">
+      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screensharingtest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/screensharingtest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="289">
+              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="janus.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/janus.js">
+        <entry file="file://$PROJECT_DIR$/ribbit/janus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="2205" column="77" selection-start-line="2205" selection-start-column="13" selection-end-line="2205" selection-end-column="77" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videoroomtest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/videoroomtest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="textroomtest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/textroomtest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videocalltest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/videocalltest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="streamingtest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/janus/streamingtest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_scrollbar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/_scrollbar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="322">
+              <caret line="2213" column="39" lean-forward="true" selection-start-line="2213" selection-start-column="39" selection-end-line="2213" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -154,16 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav-item</find>
-      <find>nav</find>
-      <find>excel</find>
-      <find>nav-ite</find>
-      <find>facebook</find>
-      <find>mobile</find>
-      <find>wiz</find>
-      <find>content-box</find>
-      <find>hint</find>
-      <find>content-</find>
       <find>a {</find>
       <find>prev</find>
       <find>google</find>
@@ -179,11 +78,21 @@
       <find>35.188.197.130/rtc</find>
       <find>audio</find>
       <find>send =</find>
-      <find>screentest</find>
       <find>.mediaDevices.getUserMedia</find>
       <find>getdisplaymedia</find>
       <find>getdisplaymedia(</find>
       <find>getusermedia</find>
+      <find>Media audio mix, windows only</find>
+      <find>#create</find>
+      <find>$('#desc')</find>
+      <find>screentest</find>
+      <find>#start</find>
+      <find>newRemoteFeed</find>
+      <find>checkEnterJoin</find>
+      <find>preShareScreen</find>
+      <find>checkEnterShare</find>
+      <find>room</find>
+      <find>myusername</find>
     </findStrings>
     <replaceStrings>
       <replace>var server = &quot;http://35.188.197.130/rtc&quot;;</replace>
@@ -215,11 +124,12 @@
         <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/janus/videocalltest.js" />
-        <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
         <option value="$PROJECT_DIR$/janus/videoroomtest.js" />
         <option value="$PROJECT_DIR$/janus/janus.js" />
-        <option value="$PROJECT_DIR$/ribbit/index.htm" />
+        <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
         <option value="$PROJECT_DIR$/ribbit/screensharingtest.html" />
+        <option value="$PROJECT_DIR$/ribbit/index.htm" />
+        <option value="$PROJECT_DIR$/ribbit/screensharingtest.js" />
       </list>
     </option>
   </component>
@@ -233,8 +143,8 @@
     <handled-path value="$PROJECT_DIR$/control/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="y" value="26" />
+    <option name="x" value="-4" />
+    <option name="y" value="12" />
     <option name="width" value="1934" />
     <option name="height" value="1025" />
   </component>
@@ -244,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,6 +185,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,28 +279,29 @@
       <workItem from="1569275844704" duration="3672000" />
       <workItem from="1569385313912" duration="5735000" />
       <workItem from="1569811859117" duration="1924000" />
-      <workItem from="1569995405334" duration="4133000" />
+      <workItem from="1569995405334" duration="5356000" />
+      <workItem from="1570163832095" duration="3587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31313000" />
+    <option name="totallyTimeSpent" value="36123000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="26" width="1934" height="1025" extended-state="0" />
+    <frame x="-4" y="12" width="1934" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11953042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12059765" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026042" side_tool="true" weight="0.3177471" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32731137" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" visible="true" weight="0.319053" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" weight="0.319053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -400,6 +311,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12059765" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32731137" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49739584" visible="true" weight="0.319053" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026042" side_tool="true" weight="0.3177471" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -416,27 +348,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/_font.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="646" column="11" selection-start-line="646" selection-start-column="11" selection-end-line="646" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_layout_block.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_slider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_variables_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -448,27 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="526" column="7" selection-start-line="526" selection-start-column="7" selection-end-line="526" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#3;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#23455#23461#0" expanded="true" />
-            <element signature="e#23461#23467#0" expanded="true" />
-            <element signature="e#23467#23473#0" expanded="true" />
-            <element signature="e#23473#23479#0" expanded="true" />
-            <element signature="e#23615#23621#0" expanded="true" />
-            <element signature="e#23621#23627#0" expanded="true" />
-            <element signature="e#23627#23633#0" expanded="true" />
-            <element signature="e#23633#23639#0" expanded="true" />
-            <element signature="e#23713#23719#0" expanded="true" />
-            <element signature="e#23719#23725#0" expanded="true" />
-            <element signature="e#23725#23731#0" expanded="true" />
-            <element signature="e#23731#23737#0" expanded="true" />
-            <element signature="e#23879#23885#0" expanded="true" />
-            <element signature="e#23885#23891#0" expanded="true" />
-            <element signature="e#23891#23897#0" expanded="true" />
-            <element signature="e#23897#23903#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,27 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="526" column="7" selection-start-line="526" selection-start-column="7" selection-end-line="526" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#3;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#23455#23461#0" expanded="true" />
-            <element signature="e#23461#23467#0" expanded="true" />
-            <element signature="e#23467#23473#0" expanded="true" />
-            <element signature="e#23473#23479#0" expanded="true" />
-            <element signature="e#23615#23621#0" expanded="true" />
-            <element signature="e#23621#23627#0" expanded="true" />
-            <element signature="e#23627#23633#0" expanded="true" />
-            <element signature="e#23633#23639#0" expanded="true" />
-            <element signature="e#23713#23719#0" expanded="true" />
-            <element signature="e#23719#23725#0" expanded="true" />
-            <element signature="e#23725#23731#0" expanded="true" />
-            <element signature="e#23731#23737#0" expanded="true" />
-            <element signature="e#23879#23885#0" expanded="true" />
-            <element signature="e#23885#23891#0" expanded="true" />
-            <element signature="e#23891#23897#0" expanded="true" />
-            <element signature="e#23897#23903#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,27 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#3;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#23455#23461#0" expanded="true" />
-            <element signature="e#23461#23467#0" expanded="true" />
-            <element signature="e#23467#23473#0" expanded="true" />
-            <element signature="e#23473#23479#0" expanded="true" />
-            <element signature="e#23615#23621#0" expanded="true" />
-            <element signature="e#23621#23627#0" expanded="true" />
-            <element signature="e#23627#23633#0" expanded="true" />
-            <element signature="e#23633#23639#0" expanded="true" />
-            <element signature="e#23713#23719#0" expanded="true" />
-            <element signature="e#23719#23725#0" expanded="true" />
-            <element signature="e#23725#23731#0" expanded="true" />
-            <element signature="e#23731#23737#0" expanded="true" />
-            <element signature="e#23879#23885#0" expanded="true" />
-            <element signature="e#23885#23891#0" expanded="true" />
-            <element signature="e#23891#23897#0" expanded="true" />
-            <element signature="e#23897#23903#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,24 +629,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/janus/videoroomtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="357">
           <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,34 +655,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="348" column="41" selection-start-line="348" selection-start-column="41" selection-end-line="348" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#3;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#23455#23461#0" expanded="true" />
-            <element signature="e#23461#23467#0" expanded="true" />
-            <element signature="e#23467#23473#0" expanded="true" />
-            <element signature="e#23473#23479#0" expanded="true" />
-            <element signature="e#23615#23621#0" expanded="true" />
-            <element signature="e#23621#23627#0" expanded="true" />
-            <element signature="e#23627#23633#0" expanded="true" />
-            <element signature="e#23633#23639#0" expanded="true" />
-            <element signature="e#23713#23719#0" expanded="true" />
-            <element signature="e#23719#23725#0" expanded="true" />
-            <element signature="e#23725#23731#0" expanded="true" />
-            <element signature="e#23731#23737#0" expanded="true" />
-            <element signature="e#23879#23885#0" expanded="true" />
-            <element signature="e#23885#23891#0" expanded="true" />
-            <element signature="e#23891#23897#0" expanded="true" />
-            <element signature="e#23897#23903#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.html">
+    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="281">
+          <caret line="257" column="22" lean-forward="true" selection-start-line="257" selection-start-column="22" selection-end-line="257" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -862,27 +678,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
+    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit/index.htm">
+    <entry file="file://$PROJECT_DIR$/ribbit/janus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="322">
+          <caret line="2213" column="39" lean-forward="true" selection-start-line="2213" selection-start-column="39" selection-end-line="2213" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/core-scripting.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="663">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
         </state>
       </provider>
     </entry>
