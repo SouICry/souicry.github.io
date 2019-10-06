@@ -109,6 +109,7 @@ $(document).ready(function() {
 								$("#screencapture").parent().unblock();
 								if(on) {
 									window.location.hash = '' + room;
+									window.open('http://localhost:3000/ready?room=' + room);
 								} else {
 									bootbox.alert("Your screen sharing session just stopped.", function() {
 										janus.destroy();
