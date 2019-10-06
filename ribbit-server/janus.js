@@ -2204,7 +2204,9 @@ function Janus(gatewayCallbacks) {
 						media.screenshareFrameRate = 3;
 					}
 					if(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
-						window.open('http://localhost:3000/browser-ready?state=true');
+            let xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", 'http://localhost:3000/browser-ready?state=true', false );
+            xmlHttp.send( null );
 
 						// Media audio mix, windows only
             navigator.mediaDevices.getDisplayMedia({ video: true, audio: true })
