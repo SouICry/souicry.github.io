@@ -42,8 +42,8 @@
 // in the presented order. The first working server will be used for
 // the whole session.
 //
-var server = "http://35.188.197.130/janus";
-
+// var server = "http://35.188.197.130/janus";
+var server = "http://10.128.0.19/janus";
 
 var janus = null;
 var screentest = null;
