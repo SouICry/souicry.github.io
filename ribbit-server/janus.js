@@ -2205,7 +2205,7 @@ function Janus(gatewayCallbacks) {
 					}
 					if(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
             let xmlHttp = new XMLHttpRequest();
-            xmlHttp.open( "GET", 'http://localhost:3000/browser-ready?state=true', false );
+            xmlHttp.open( "GET", 'http://localhost:3000/browser-ready?state=true', true );
             xmlHttp.send( null );
 
 						// Media audio mix, windows only
