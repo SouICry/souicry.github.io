@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/screensharingtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/screensharingtest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/janus/textroomtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/textroomtest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbit-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit-server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbit-server/janus.js" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit-server/janus.js" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbit-server/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
@@ -40,6 +40,15 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -129,7 +138,6 @@
         <option value="$PROJECT_DIR$/janus/videocalltest.js" />
         <option value="$PROJECT_DIR$/janus/videoroomtest.js" />
         <option value="$PROJECT_DIR$/janus/janus.js" />
-        <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
         <option value="$PROJECT_DIR$/ribbit/screensharingtest.html" />
         <option value="$PROJECT_DIR$/ribbit/index.htm" />
         <option value="$PROJECT_DIR$/ribbit/screensharingtest.js" />
@@ -138,6 +146,7 @@
         <option value="$PROJECT_DIR$/ribbit-server/index.htm" />
         <option value="$PROJECT_DIR$/ribbit-server/janus.js" />
         <option value="$PROJECT_DIR$/ribbit-server/index.js" />
+        <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
       </list>
     </option>
   </component>
@@ -293,12 +302,12 @@
       <workItem from="1570163832095" duration="15333000" />
       <workItem from="1570512637183" duration="716000" />
       <workItem from="1570515400304" duration="630000" />
-      <workItem from="1570684465991" duration="123000" />
+      <workItem from="1570684465991" duration="209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49338000" />
+    <option name="totallyTimeSpent" value="49424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -660,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="257" column="22" lean-forward="true" selection-start-line="257" selection-start-column="22" selection-end-line="257" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/janus/janus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -711,6 +713,13 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
