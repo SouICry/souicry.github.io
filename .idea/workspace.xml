@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ribbit-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit-server/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/js/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/js/firestore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/js/require.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,20 +29,47 @@
       <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbit-server/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="238">
+              <caret line="14" column="46" lean-forward="true" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbit-server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="172" column="34" lean-forward="true" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
+            <state relative-caret-position="245">
+              <caret line="177" column="41" lean-forward="true" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbit/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbit/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firestore.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ribbit/js/firestore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret column="2913" selection-start-column="2913" selection-end-column="2913" />
             </state>
           </provider>
         </entry>
@@ -66,13 +98,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>var server = null;</find>
       <find>if(window.location.protocol === 'http:') 	server = &quot;http://&quot; + window.location.hostname + &quot;:8088/janus&quot;; else 	server = &quot;https://&quot; + window.location.hostname + &quot;:8089/janus&quot;;</find>
       <find>\nif\(window\.location\.protocol \=\=\= \'http\:\'\)\n\	server \= \&quot;http\:\/\/\&quot; \+ window\.location\.hostname \+ \&quot;\:8088\/janus\&quot;\;\nelse\n\	server \= \&quot;https\:\/\/\&quot; \+ window\.location\.hostname \+ \&quot;\:8089\/janus\&quot;\;</find>
       <find>34.70.227.60</find>
@@ -102,6 +134,7 @@
       <find>getdisplaymedia</find>
       <find>window.ope</find>
       <find>window.open</find>
+      <find>&lt;video</find>
     </findStrings>
     <replaceStrings>
       <replace>var server = &quot;http://35.188.197.130/rtc&quot;;</replace>
@@ -145,6 +178,13 @@
         <option value="$PROJECT_DIR$/ribbit-server/janus.js" />
         <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
         <option value="$PROJECT_DIR$/ribbit-server/index.js" />
+        <option value="$PROJECT_DIR$/control/ribbit.html" />
+        <option value="$PROJECT_DIR$/ribbit/main.js" />
+        <option value="$PROJECT_DIR$/ribbit/require.js" />
+        <option value="$PROJECT_DIR$/ribbit/index.html" />
+        <option value="$PROJECT_DIR$/ribbit/js/firebase.js" />
+        <option value="$PROJECT_DIR$/ribbit/js/main.js" />
+        <option value="$PROJECT_DIR$/ribbit/js/firestore.js" />
       </list>
     </option>
   </component>
@@ -158,10 +198,10 @@
     <handled-path value="$PROJECT_DIR$/control/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-230" />
-    <option name="y" value="40" />
-    <option name="width" value="1934" />
-    <option name="height" value="1025" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -181,7 +221,23 @@
             <path>
               <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="souicry.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="souicry.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="souicry.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="ribbit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="souicry.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="ribbit" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="souicry.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -201,11 +257,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FullScreen" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ribbit-signal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ribbit-control" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -213,15 +270,17 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\img" />
-      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\scss" />
-      <recent name="C:\Users\SouICry\Desktop\souicry.github.io" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\souic\Desktop\souicry.github.io\ribbit" />
       <recent name="C:\Users\SouICry\Desktop\souicry.github.io\scss" />
       <recent name="C:\Users\SouICry\Desktop\souicry.github.io\souicry.github.io" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\souic\Desktop\souicry.github.io\ribbit\js" />
+      <recent name="C:\Users\souic\Desktop\souicry.github.io\ribbit" />
+      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\img" />
+      <recent name="C:\Users\SouICry\Desktop\souicry.github.io\scss" />
+      <recent name="C:\Users\SouICry\Desktop\souicry.github.io" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,26 +354,26 @@
       <workItem from="1570163832095" duration="15333000" />
       <workItem from="1570512637183" duration="716000" />
       <workItem from="1570515400304" duration="630000" />
-      <workItem from="1570684465991" duration="1227000" />
+      <workItem from="1570684465991" duration="6437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50442000" />
+    <option name="totallyTimeSpent" value="55652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123667374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123667374" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026042" side_tool="true" weight="0.3177471" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32731137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" visible="true" weight="0.30827886" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49739584" visible="true" weight="0.30827886" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -324,7 +383,6 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -368,48 +426,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="526" column="7" selection-start-line="526" selection-start-column="7" selection-end-line="526" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_scrollbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/owl.carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_font.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="646" column="11" selection-start-line="646" selection-start-column="11" selection-end-line="646" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_layout_block.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_slider.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -692,6 +708,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/control/ribbit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit-server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="177" column="41" lean-forward="true" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit-server/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="46" lean-forward="true" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/js/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="4" column="17373" selection-start-line="4" selection-start-column="17373" selection-end-line="4" selection-end-column="17373" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/js/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" lean-forward="true" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -699,20 +753,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit-server/index.htm">
+    <entry file="file://$PROJECT_DIR$/ribbit/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        <state relative-caret-position="102">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit-server/index.js">
+    <entry file="file://$PROJECT_DIR$/ribbit/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="172" column="34" lean-forward="true" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/js/firestore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret column="2913" selection-start-column="2913" selection-end-column="2913" />
         </state>
       </provider>
     </entry>
