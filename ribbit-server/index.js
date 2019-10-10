@@ -168,23 +168,23 @@ $(document).ready(function() {
 									screentest.handleRemoteJsep({jsep: jsep});
 								}
 							},
-							onlocalstream: function(stream) {
-								Janus.debug(" ::: Got a local stream :::");
-								Janus.debug(stream);
-								$('body').append('<video class="rounded centered" id="screenvideo" width="100%" height="100%" autoplay playsinline muted="muted"/>');
-								Janus.attachMediaStream($('#screenvideo').get(0), stream);
-								if(screentest.webrtcStuff.pc.iceConnectionState !== "completed" &&
-										screentest.webrtcStuff.pc.iceConnectionState !== "connected") {
-									$("#screencapture").parent().block({
-										message: '<b>Publishing...</b>',
-										css: {
-											border: 'none',
-											backgroundColor: 'transparent',
-											color: 'white'
-										}
-									});
-								}
-							},
+							// onlocalstream: function(stream) {
+							// 	Janus.debug(" ::: Got a local stream :::");
+							// 	Janus.debug(stream);
+							// 	$('body').append('<video class="rounded centered" id="screenvideo" width="100%" height="100%" autoplay playsinline muted="muted"/>');
+							// 	Janus.attachMediaStream($('#screenvideo').get(0), stream);
+							// 	if(screentest.webrtcStuff.pc.iceConnectionState !== "completed" &&
+							// 			screentest.webrtcStuff.pc.iceConnectionState !== "connected") {
+							// 		$("#screencapture").parent().block({
+							// 			message: '<b>Publishing...</b>',
+							// 			css: {
+							// 				border: 'none',
+							// 				backgroundColor: 'transparent',
+							// 				color: 'white'
+							// 			}
+							// 		});
+							// 	}
+							// },
 							onremotestream: function(stream) {
 								// The publisher stream is sendonly, we don't expect anything here
 							},
