@@ -2204,7 +2204,16 @@ function Janus(gatewayCallbacks) {
 						media.screenshareFrameRate = 3;
 					}
 					if(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
-						window.open('http://localhost:3000/browser-ready?state=true');
+
+            const Http = new XMLHttpRequest();
+            const url='http://localhost:3000/browser-ready?state=true';
+            Http.open("GET", url);
+            Http.send();
+
+            Http.onreadystatechange = (e) => {
+              console.log(Http.responseText)
+            };
+						//window.open('http://localhost:3000/browser-ready?state=true');
 
 						// Media audio mix, windows only
             navigator.mediaDevices.getDisplayMedia({ video: true, audio: true })
