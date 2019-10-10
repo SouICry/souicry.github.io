@@ -43,7 +43,7 @@
 // the whole session.
 //
 //var server = "http://35.188.197.130/janus";
-var server = "https://45.32.83.195/stream";
+var server = "https://test.wewatch.fun/stream";
 
 var janus = null;
 var screentest = null;
