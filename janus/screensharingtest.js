@@ -42,7 +42,7 @@
 // in the presented order. The first working server will be used for
 // the whole session.
 //
-var server = "https://test.wewatch.fun/stream";
+var server = "https://process.wewatch.fun/stream";
 
 var janus = null;
 var screentest = null;
