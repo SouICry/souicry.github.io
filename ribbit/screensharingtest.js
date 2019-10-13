@@ -67,7 +67,6 @@ $(document).ready(function() {
 								},
 								error: function(error) {
 									Janus.error("  -- Error attaching plugin...", error);
-									bootbox.alert("Error attaching plugin... " + error);
 								},
 								consentDialog: function(on) {
 									Janus.debug("Consent dialog should be " + (on ? "on" : "off") + " now");
@@ -87,16 +86,7 @@ $(document).ready(function() {
 									}
 								},
 								webrtcState: function(on) {
-									Janus.log("Janus says our WebRTC PeerConnection is " + (on ? "up" : "down") + " now");
-									$("#screencapture").parent().unblock();
-									if(on) {
-										bootbox.alert("Your screen sharing session just started: pass the <b>" + room + "</b> session identifier to those who want to attend.");
-									} else {
-										bootbox.alert("Your screen sharing session just stopped.", function() {
-											janus.destroy();
-											window.location.reload();
-										});
-									}
+
 								},
 								onmessage: function(msg, jsep) {
 									Janus.debug(" ::: Got a message (publisher) :::");
@@ -173,25 +163,6 @@ $(document).ready(function() {
 									}
 								},
 								onlocalstream: function(stream) {
-									Janus.debug(" ::: Got a local stream :::");
-									Janus.debug(stream);
-									$('#screenmenu').hide();
-									$('#room').removeClass('hide').show();
-									if($('#screenvideo').length === 0) {
-										$('#screencapture').append('<video class="rounded centered" id="screenvideo" width="100%" height="100%" autoplay playsinline muted="muted"/>');
-									}
-									Janus.attachMediaStream($('#screenvideo').get(0), stream);
-									if(screentest.webrtcStuff.pc.iceConnectionState !== "completed" &&
-											screentest.webrtcStuff.pc.iceConnectionState !== "connected") {
-										$("#screencapture").parent().block({
-											message: '<b>Publishing...</b>',
-											css: {
-												border: 'none',
-												backgroundColor: 'transparent',
-												color: 'white'
-											}
-										});
-									}
 								},
 								onremotestream: function(stream) {
 									// The publisher stream is sendonly, we don't expect anything here
@@ -217,16 +188,6 @@ $(document).ready(function() {
 		});
 	}});
 });
-
-function checkEnterShare(field, event) {
-	var theCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
-	if(theCode == 13) {
-		preShareScreen();
-		return false;
-	} else {
-		return true;
-	}
-}
 
 function preShareScreen() {
 	if(!Janus.isExtensionEnabled()) {
