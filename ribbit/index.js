@@ -33,9 +33,7 @@ let connectStreamServer;
 $(document).ready(function() {
 	// Initialize the library (all console debuggers enabled)
 	Janus.init({debug: "all", callback: function() {
-      console.log('connection');
-		// Use a button to start the demo
-		connectStreamServer = () => {
+		console.log('connection');
 			// Make sure the browser supports WebRTC
 			if(!Janus.isWebrtcSupported()) {
 				bootbox.alert("No WebRTC support... ");
@@ -216,7 +214,7 @@ $(document).ready(function() {
 						window.location.reload();
 					}
 				});
-		}
+
 
 	}});
 });
