@@ -45,6 +45,7 @@ $(document).ready(function() {
 				{
 					server: server,
 					success: function() {
+						console.log('stream server connected')
 						// Attach to video room test plugin
 						janus.attach(
 							{
@@ -218,8 +219,6 @@ $(document).ready(function() {
 				});
 		}
 
-		// Autostart
-		connectStreamServer();
 	}});
 });
 
