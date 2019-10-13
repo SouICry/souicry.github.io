@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ribbit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbit/screensharingtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit/screensharingtest.js" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
@@ -21,20 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="291">
+              <caret line="280" column="53" lean-forward="true" selection-start-line="280" selection-start-column="53" selection-end-line="280" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ribbit/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="25" column="74" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="74" />
+            <state relative-caret-position="274">
+              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -52,9 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>send =</find>
-      <find>.mediaDevices.getUserMedia</find>
-      <find>getdisplaymedia(</find>
       <find>getusermedia</find>
       <find>Media audio mix, windows only</find>
       <find>#create</find>
@@ -73,7 +71,6 @@
       <find>window.open</find>
       <find>randomString</find>
       <find>footer</find>
-      <find>&lt;video</find>
       <find>prescre</find>
       <find>checkEnterShare</find>
       <find>preShareScreen</find>
@@ -82,6 +79,10 @@
       <find>screenmenu</find>
       <find>joinnow</find>
       <find>desc</find>
+      <find>&lt;video</find>
+      <find>screenvideo</find>
+      <find>screencapture</find>
+      <find>spinner</find>
     </findStrings>
     <replaceStrings>
       <replace>var server = &quot;http://35.188.197.130/rtc&quot;;</replace>
@@ -131,8 +132,8 @@
         <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
         <option value="$PROJECT_DIR$/ribbit/index.js" />
         <option value="$PROJECT_DIR$/ribbit-server/index.js" />
-        <option value="$PROJECT_DIR$/ribbit/index.html" />
         <option value="$PROJECT_DIR$/ribbit/screensharingtest.js" />
+        <option value="$PROJECT_DIR$/ribbit/index.html" />
       </list>
     </option>
   </component>
@@ -307,12 +308,12 @@
       <workItem from="1570163832095" duration="15333000" />
       <workItem from="1570512637183" duration="716000" />
       <workItem from="1570515400304" duration="630000" />
-      <workItem from="1570684465991" duration="13809000" />
+      <workItem from="1570684465991" duration="14143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63024000" />
+    <option name="totallyTimeSpent" value="63358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2006" y="170" width="1934" height="1025" extended-state="0" />
@@ -720,17 +721,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit/index.html">
+    <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="25" column="74" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="74" />
+        <state relative-caret-position="291">
+          <caret line="280" column="53" lean-forward="true" selection-start-line="280" selection-start-column="53" selection-end-line="280" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.js">
+    <entry file="file://$PROJECT_DIR$/ribbit/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+        <state relative-caret-position="274">
+          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
         </state>
       </provider>
     </entry>
