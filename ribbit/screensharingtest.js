@@ -1,4 +1,47 @@
-
+// We make use of this 'server' variable to provide the address of the
+// REST Janus API. By default, in this example we assume that Janus is
+// co-located with the web server hosting the HTML pages but listening
+// on a different port (8088, the default for HTTP in Janus), which is
+// why we make use of the 'window.location.hostname' base address. Since
+// Janus can also do HTTPS, and considering we don't really want to make
+// use of HTTP for Janus if your demos are served on HTTPS, we also rely
+// on the 'window.location.protocol' prefix to build the variable, in
+// particular to also change the port used to contact Janus (8088 for
+// HTTP and 8089 for HTTPS, if enabled).
+// In case you place Janus behind an Apache frontend (as we did on the
+// online demos at http://janus.conf.meetecho.com) you can just use a
+// relative path for the variable, e.g.:
+//
+// 		var server = "/janus";
+//
+// which will take care of this on its own.
+//
+//
+// If you want to use the WebSockets frontend to Janus, instead, you'll
+// have to pass a different kind of address, e.g.:
+//
+// 		var server = "ws://" + window.location.hostname + ":8188";
+//
+// Of course this assumes that support for WebSockets has been built in
+// when compiling the server. WebSockets support has not been tested
+// as much as the REST API, so handle with care!
+//
+//
+// If you have multiple options available, and want to let the library
+// autodetect the best way to contact your server (or pool of servers),
+// you can also pass an array of servers, e.g., to provide alternative
+// means of access (e.g., try WebSockets first and, if that fails, fall
+// back to plain HTTP) or just have failover servers:
+//
+//		var server = [
+//			"ws://" + window.location.hostname + ":8188",
+//			"/janus"
+//		];
+//
+// This will tell the library to try connecting to each of the servers
+// in the presented order. The first working server will be used for
+// the whole session.
+//
 var server = "https://process.wewatch.fun/stream";
 
 var janus = null;
@@ -28,12 +71,12 @@ function randomString(len, charSet) {
 }
 
 
-let connectStreamServer;
-
 $(document).ready(function() {
 	// Initialize the library (all console debuggers enabled)
 	Janus.init({debug: "all", callback: function() {
-		console.log('connection');
+		// Use a button to start the demo
+		$('#start').one('click', function() {
+			$(this).attr('disabled', true).unbind('click');
 			// Make sure the browser supports WebRTC
 			if(!Janus.isWebrtcSupported()) {
 				bootbox.alert("No WebRTC support... ");
@@ -44,7 +87,6 @@ $(document).ready(function() {
 				{
 					server: server,
 					success: function() {
-						console.log('stream server connected');
 						// Attach to video room test plugin
 						janus.attach(
 							{
@@ -56,6 +98,8 @@ $(document).ready(function() {
 									Janus.log("Plugin attached! (" + screentest.getPlugin() + ", id=" + screentest.getId() + ")");
 									// Prepare the username registration
 									$('#screenmenu').removeClass('hide').show();
+									$('#createnow').removeClass('hide').show();
+									$('#create').click(preShareScreen);
 									$('#joinnow').removeClass('hide').show();
 									$('#join').click(joinScreen);
 									$('#desc').focus();
@@ -214,10 +258,94 @@ $(document).ready(function() {
 						window.location.reload();
 					}
 				});
-
-
+		});
 	}});
 });
+
+function checkEnterShare(field, event) {
+	var theCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+	if(theCode == 13) {
+		preShareScreen();
+		return false;
+	} else {
+		return true;
+	}
+}
+
+function preShareScreen() {
+	if(!Janus.isExtensionEnabled()) {
+		bootbox.alert("You're using Chrome but don't have the screensharing extension installed: click <b><a href='https://chrome.google.com/webstore/detail/janus-webrtc-screensharin/hapfgfdkleiggjjpfpenajgdnfckjpaj' target='_blank'>here</a></b> to do so", function() {
+			window.location.reload();
+		});
+		return;
+	}
+	// Create a new room
+	$('#desc').attr('disabled', true);
+	$('#create').attr('disabled', true).unbind('click');
+	$('#roomid').attr('disabled', true);
+	$('#join').attr('disabled', true).unbind('click');
+	if($('#desc').val() === "") {
+		bootbox.alert("Please insert a description for the room");
+		$('#desc').removeAttr('disabled', true);
+		$('#create').removeAttr('disabled', true).click(preShareScreen);
+		$('#roomid').removeAttr('disabled', true);
+		$('#join').removeAttr('disabled', true).click(joinScreen);
+		return;
+	}
+	capture = "screen";
+	if(navigator.mozGetUserMedia) {
+		// Firefox needs a different constraint for screen and window sharing
+		bootbox.dialog({
+			title: "Share whole screen or a window?",
+			message: "Firefox handles screensharing in a different way: are you going to share the whole screen, or would you rather pick a single window/application to share instead?",
+			buttons: {
+				screen: {
+					label: "Share screen",
+					className: "btn-primary",
+					callback: function() {
+						capture = "screen";
+						shareScreen();
+					}
+				},
+				window: {
+					label: "Pick a window",
+					className: "btn-success",
+					callback: function() {
+						capture = "window";
+						shareScreen();
+					}
+				}
+			},
+			onEscape: function() {
+				$('#desc').removeAttr('disabled', true);
+				$('#create').removeAttr('disabled', true).click(preShareScreen);
+				$('#roomid').removeAttr('disabled', true);
+				$('#join').removeAttr('disabled', true).click(joinScreen);
+			}
+		});
+	} else {
+		shareScreen();
+	}
+}
+
+function shareScreen() {
+	// Create a new room
+	var desc = $('#desc').val();
+	role = "publisher";
+	var create = { "request": "create", "description": desc, "bitrate": 500000, "publishers": 1 };
+	screentest.send({"message": create, success: function(result) {
+		var event = result["videoroom"];
+		Janus.debug("Event: " + event);
+		if(event != undefined && event != null) {
+			// Our own screen sharing session has been created, join it
+			room = result["room"];
+			Janus.log("Screen sharing session created: " + room);
+			myusername = randomString(12);
+			var register = { "request": "join", "room": room, "ptype": "publisher", "display": myusername };
+			screentest.send({"message": register});
+		}
+	}});
+}
 
 function checkEnterJoin(field, event) {
 	var theCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
