@@ -57,8 +57,6 @@ $(document).ready(function() {
 									Janus.log("Plugin attached! (" + screentest.getPlugin() + ", id=" + screentest.getId() + ")");
 									// Prepare the username registration
 									$('#screenmenu').removeClass('hide').show();
-									$('#createnow').removeClass('hide').show();
-									$('#create').click(preShareScreen);
 									$('#joinnow').removeClass('hide').show();
 									$('#join').click(joinScreen);
 									$('#desc').focus();
