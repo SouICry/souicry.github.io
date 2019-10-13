@@ -49,14 +49,11 @@ $(document).ready(function() {
 								plugin: "janus.plugin.videoroom",
 								opaqueId: opaqueId,
 								success: function(pluginHandle) {
-									$('#details').remove();
 									screentest = pluginHandle;
 									Janus.log("Plugin attached! (" + screentest.getPlugin() + ", id=" + screentest.getId() + ")");
 									// Prepare the username registration
-									$('#screenmenu').removeClass('hide').show();
 									$('#joinnow').removeClass('hide').show();
 									$('#join').click(joinScreen);
-									$('#desc').focus();
 									$('#start').removeAttr('disabled').html("Stop")
 										.click(function() {
 											$(this).attr('disabled', true);
@@ -186,16 +183,6 @@ $(document).ready(function() {
 		});
 	}});
 });
-
-function checkEnterJoin(field, event) {
-	var theCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
-	if(theCode == 13) {
-		joinScreen();
-		return false;
-	} else {
-		return true;
-	}
-}
 
 function joinScreen() {
 	// Join an existing screen sharing session
