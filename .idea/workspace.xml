@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24940828-8f4e-4c2e-bdd9-58b1bd9bdad2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/janus/screensharingtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/janus/screensharingtest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/firebase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbit/janus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ribbit/index.html" afterDir="false" />
     </list>
     <ignored path="souicry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +45,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="firebase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbit/firebase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbit/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="136">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ribbit/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -61,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="screensharingtest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="204">
+              <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -92,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>if(window.location.protocol === 'http:') 	server = &quot;http://&quot; + window.location.hostname + &quot;:8088/janus&quot;; else 	server = &quot;https://&quot; + window.location.hostname + &quot;:8089/janus&quot;;</find>
       <find>\nif\(window\.location\.protocol \=\=\= \'http\:\'\)\n\	server \= \&quot;http\:\/\/\&quot; \+ window\.location\.hostname \+ \&quot;\:8088\/janus\&quot;\;\nelse\n\	server \= \&quot;https\:\/\/\&quot; \+ window\.location\.hostname \+ \&quot;\:8089\/janus\&quot;\;</find>
       <find>34.70.227.60</find>
       <find>:8088</find>
@@ -109,8 +128,6 @@
       <find>#start</find>
       <find>newRemoteFeed</find>
       <find>checkEnterJoin</find>
-      <find>preShareScreen</find>
-      <find>checkEnterShare</find>
       <find>myusername</find>
       <find>mouseMove</find>
       <find>room</find>
@@ -122,6 +139,9 @@
       <find>window.ope</find>
       <find>window.open</find>
       <find>&lt;video</find>
+      <find>randomString</find>
+      <find>preShareScreen</find>
+      <find>checkEnterShare</find>
     </findStrings>
     <replaceStrings>
       <replace>var server = &quot;http://35.188.197.130/rtc&quot;;</replace>
@@ -167,11 +187,12 @@
         <option value="$PROJECT_DIR$/control/ribbit.html" />
         <option value="$PROJECT_DIR$/ribbit/main.js" />
         <option value="$PROJECT_DIR$/ribbit/require.js" />
-        <option value="$PROJECT_DIR$/ribbit/index.html" />
         <option value="$PROJECT_DIR$/ribbit/js/firebase.js" />
         <option value="$PROJECT_DIR$/ribbit/js/main.js" />
         <option value="$PROJECT_DIR$/ribbit/js/firestore.js" />
         <option value="$PROJECT_DIR$/janus/screensharingtest.js" />
+        <option value="$PROJECT_DIR$/ribbit/index.html" />
+        <option value="$PROJECT_DIR$/ribbit/index.js" />
       </list>
     </option>
   </component>
@@ -185,8 +206,8 @@
     <handled-path value="$PROJECT_DIR$/control/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2138" />
-    <option name="y" value="-39" />
+    <option name="x" value="2036" />
+    <option name="y" value="150" />
     <option name="width" value="1934" />
     <option name="height" value="1025" />
   </component>
@@ -346,15 +367,15 @@
       <workItem from="1570163832095" duration="15333000" />
       <workItem from="1570512637183" duration="716000" />
       <workItem from="1570515400304" duration="630000" />
-      <workItem from="1570684465991" duration="8924000" />
+      <workItem from="1570684465991" duration="10983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58139000" />
+    <option name="totallyTimeSpent" value="60198000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2138" y="-39" width="1934" height="1025" extended-state="0" />
+    <frame x="2036" y="150" width="1934" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Remote Host" order="3" />
@@ -419,13 +440,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/_slider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_variables_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -692,7 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit/screensharingtest.html" />
     <entry file="file://$PROJECT_DIR$/ribbit-server/robot.js" />
     <entry file="file://$PROJECT_DIR$/ribbit-server/janus.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -739,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbit/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ribbit/js/firestore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -762,8 +768,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/janus/screensharingtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="204">
+          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/firebase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbit/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
