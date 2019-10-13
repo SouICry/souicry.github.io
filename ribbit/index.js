@@ -33,6 +33,7 @@ let connectStreamServer;
 $(document).ready(function() {
 	// Initialize the library (all console debuggers enabled)
 	Janus.init({debug: "all", callback: function() {
+      console.log('connection');
 		// Use a button to start the demo
 		connectStreamServer = () => {
 			// Make sure the browser supports WebRTC
@@ -45,7 +46,7 @@ $(document).ready(function() {
 				{
 					server: server,
 					success: function() {
-						console.log('stream server connected')
+						console.log('stream server connected');
 						// Attach to video room test plugin
 						janus.attach(
 							{
