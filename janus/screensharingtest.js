@@ -42,7 +42,7 @@
 // in the presented order. The first working server will be used for
 // the whole session.
 //
-var server = "https://process.livewatch.fun/stream";
+var server = "https://process.watchclub.live/stream";
 
 var janus = null;
 var screentest = null;
