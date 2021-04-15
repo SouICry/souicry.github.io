@@ -1,0 +1,54 @@
+#grid-body {
+    display: flex;
+    flex-flow: row wrap;
+    width: 700px;
+    border: solid 1px white;
+}
+
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-grow: 1;
+    width: 62px;
+    height: 62px;
+    font-size: 11px;
+}
+
+.grid-cell img {
+    border-radius: 5px;
+}
+
+.grid-cell.highlighted {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.h-component {
+    border-bottom: solid 1px white;
+}
+
+.v-component {
+    border-right: solid 1px white;
+}
+
+.img-box {
+    position: relative;
+}
+img.overlay {
+    position: absolute;
+    z-index: 100;
+    top: -2px;
+    left: -4px;
+    width: 50px;
+}
+
+.hover-img-title {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.hover-title {
+    margin-left: 10px;
+}
