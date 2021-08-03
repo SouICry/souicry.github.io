@@ -3,8 +3,9 @@ html {
 }
 
 body {
-    max-width: 1200px;
-    padding: 100px;
+    width: 1280px;
+    max-width: calc(100vw - 40px);
+    padding: 80px;
     box-sizing: border-box;
     margin: auto;
     display: flex;
