@@ -15,11 +15,17 @@ body {
 }
 
 video, img {
-    max-width: 600px;
+    max-width: 560px;
     max-height: 400px;
     width: auto;
     margin: auto;
 }
+
+video.wide {
+    max-width: 100%;
+    max-height: 600px;
+}
+
 
 .images {
     display: flex;
