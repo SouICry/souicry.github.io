@@ -1,0 +1,214 @@
+<head>
+    <title>Seren P2</title>
+    <link rel="stylesheet" href="seren.css">
+</head>
+
+<body>
+    <h1>Seren P2 Attacks</h1>
+    <h2>Phases</h2>
+    <p>
+        Seren cycles through 4 phasess: Noon, Dusk, Midnight and Dawn. Initially, Noon, Dusk and Dawn are
+        2 minutes and Midnight is 1 minute. Every time anyone's gauge fills up, Midnight is shortened
+        by (TBD) seconds and the other three phases are increased by (TBD/3) seconds. The durations adapt
+        instantaneously. Note that during Midnight gauges do not fill up and instead passively decrease.
+    </p>
+    <p>If Midnight is shortened to none, then the party will be forced to exit. </p>
+    <p>At the end of each phase, Seren will finish her current attack, then cast Rays of Light and
+        transition to the next phase.
+    </p>
+
+    <h2>Rays of Light</h2>
+    <p>At the end of each phase, multiple Pillars will appear after a delay, dealing 1000% HP damage and
+        increasing your Sun Gauge by a large amount. One of the pillars will be shorter than the other ones,
+        ducking (? need to test) under that one is safe.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/p2-pillar.mp4">
+    </video>
+
+
+    <h1>Noon</h1>
+    <h2>Sun Rays</h2>
+    <p>
+        Two Spheres (three when Seren has than 33% HP) appear at the top of the map. After a brief delay, the Spheres
+        will each
+        cast a wide laser at a random angle. The lasers cross each other, forming an 'X' shapes, deal 10%
+        HP damage continuously and causes your screen to briefly turn fully white.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/noon-laser.mp4">
+    </video>
+
+    <h2>Bombs</h2>
+    <p>
+        Bombs appear at random spots on the ground. After a short delay, the Bombs explide, dealing
+        35% HP damage and inflicting Blind.
+    </p>
+    <img src="img/noon-bomb.gif" />
+
+    <h2>Dash<span> - Negated by Untouchable</span></h2>
+    <p>
+        Seren dashes forwards after a short delay, dealing 35% HP damage and inflicting Blind.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/noon-dash.mp4">
+    </video>
+
+    <h2>Stab</h2>
+    <p>
+        Seren stabs her sword after a brief delay, dealing 20% HP damage.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/noon-stab.mp4">
+    </video>
+
+    <h2>AOE Lasers</h2>
+    <p>
+        After a short delay, Seren fires 12 lasers around her, dealing 50% HP damage. The lasers are
+        also wider than in P1.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/noon-aoe-laser.mp4">
+    </video>
+
+    <h1>Dusk</h1>
+    <p>You will constnatly take 1% HP damage every second, and potion healing is reduced by 80%</p>
+    <h2>Pillars</h2>
+    <p>
+        Pillars will randomly appear on the map, dealing 90% HP damage after a brief delay. </p>
+    <video autoplay muted loop>
+        <source src="img/dusk-pillar.mp4">
+    </video>
+
+    <h2>Fire Walls</h2>
+    <p>
+        Two walls of fire appear on the left and right of the center of the map. Passing through them
+        deals 50% HP damaage, and inflicts Poison.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/dusk-fire-wall.mp4">
+    </video>
+
+    <h2>Dash<span> - Negated by Untouchable</span></h2>
+    <p>
+        Seren dashes forwards after a short delay, dealing 50% HP damage and inflicts Poison.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/dusk-dash.mp4">
+    </video>
+
+    <h2>Stab</h2>
+    <p>
+        Seren stabs her sword after a brief delay, dealing 35% HP damage and inflicts Poison.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/dusk-stab.mp4">
+    </video>
+
+    <h2>Triple Slash<span> - First two hits negated by Untouchable</span></h2>
+    <p>
+        Seren slashes three separate times. Each hit does 200% HP damage after a short delay. The
+        first two hits are dashes. She will finish all three hits once she starts, even if bound.
+
+    </p>
+    <div class="images">
+        <video autoplay muted loop>
+            <source src="img/dusk-triple-strike-1.mp4">
+        </video><video autoplay muted loop>
+            <source src="img/dusk-triple-strike-2.mp4">
+        </video><video autoplay muted loop>
+            <source src="img/dusk-triple-strike-3.mp4">
+        </video>
+    </div>
+
+    <h2>Meteors</h2>
+    <p>
+        Seren summons slow falling Meteors across the entire map. Each Meteor does 40% HP damage and
+        inflicts Seal.
+    </p>
+    <div class="images">
+        <img src="img/dusk-fire-ball-cast.gif" />
+        <img src="img/dusk-fire-ball.gif" />
+    </div>
+
+    <h1>Midnight</h1>
+    <p>No skills during midnight will fill the Gauge, and the Gauge will gradually deplete.</p>
+
+    <h2>Pillars</h2>
+    <p>
+        Pillars will randomly appear on the map, dealing 15% HP damage and inflicting Seal. </p>
+    <img src="img/midnight-pillar.gif" />
+
+    <h2>Dash<span> - Negated by Untouchable</span></h2>
+    <p>
+        Seren dashes forwards after a short delay, dealing 15% HP damage, and causes a super knockback.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/midnight-dash.mp4">
+    </video>
+
+    <h2>Stab</h2>
+    <p>
+        Seren stabs her sword after a brief delay, dealing 10% HP damage.
+    </p>
+    <img src="img/midnight-stab.gif" />
+
+    <h2>Push</h2>
+    <p>
+        Seren pushes nearby enemies after a brief delay, dealing 20% HP damage and inflicting Blind.
+    </p>
+    <img src="img/midnight-push.gif" />
+
+
+    <h1>Dawn</h1>
+    <p>Seren creates a shield around herself, which slowly increases in amount. At the end of
+        Dawn, Seren is healed for the remaining shield amount and the shield disappears.
+    </p>
+
+    <h2>Deer<span> - Negated by Untouchable</span></h2>
+    <p>
+        One deer (increasing up to three as Seren HP gets lower) is summoned that chases players.
+        The deer can attack, dealing 10% HP damage and causing a super knockback.</p>
+    <img src="img/dawn-deer-attack.gif" />
+
+    <h2>Dash<span> - Negated by Untouchable</span></h2>
+    <p>
+        Seren dashes forwards after a short delay, dealing 30% HP damage and inflicting Slow.
+    </p>
+    <video autoplay muted loop>
+        <source src="img/dawn-dash.mp4">
+    </video>
+
+    <h2>Stab</h2>
+    <p>
+        Seren stabs her sword after a brief delay, dealing 15% HP damage and inflicting Slow.
+    </p>
+    <img src="img/dawn-stab.gif" />
+
+    <h2>Geyser</h2>
+    <p>
+        Seren summons a geyser in front of her that slowly moves forward. Every few seconds, the Geyser
+        will erupt, dealing 35% HP damage and causing a super knockback.
+    </p>
+    <div class="images">
+        <img src="img/dawn-geyser-cast.gif" />
+        <img src="img/dawn-geyser.gif" />
+        <video autoplay muted loop>
+            <source src="img/dawn-geyser-activation.mp4">
+        </video>
+    </div>
+    <h2>Bombs</h2>
+    <p>
+        A few Bombs will randomly appear across the map and slowly chase players. They will
+        detonate when anyone gets close, exploding after a brief delay, dealing 25% HP damage and
+        inflcting Seal,
+    </p>
+    <img src="img/dawn-ball.gif" />
+
+    <h2>Meteors</h2>
+    <p>
+        Meteors appear at the top of the map randomly and will rapidly fall down after a brief delay, dealing
+        25% HP damage and inflicting Stun.
+    </p>
+    <img src="img/dawn-pillar.gif" />
+</body>

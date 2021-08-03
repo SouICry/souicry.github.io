@@ -1,0 +1,39 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    max-width: 1200px;
+    padding: 100px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+video, img {
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    margin: auto;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-left: -10px;
+}
+
+
+
+h2 span {
+    font-size: 16px;
+}
