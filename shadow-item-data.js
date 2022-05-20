@@ -112,7 +112,7 @@ const shadowItems =
         "big": true,
         "desc": "Every 4 seconds, the holder's next attack deals 40% of the total damage they have taken since the last empowered attack as true damage."
     },
-    "runaans": {
+    "hurricane": {
         "name": "Runaan's Untamed Hurricane",
         "recipe": [
             "bow",

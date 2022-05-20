@@ -175,7 +175,7 @@ const fullItems =
         ], "done": true,
         "desc": "When the wearer takes damage or inflicts a critical hit, they gain 2 Attack Damage and Spell Power. This stacks up to 25 times, at which point the wearer gains 25 Armor and Magic Resistance."
     },
-    "runaans": {
+    "hurricane": {
         "name": "Runaan's Hurricane",
         "recipe": [
             "bow",

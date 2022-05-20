@@ -1,4 +1,4 @@
-var server = "http://45.76.168.176/stream";
+var server = "http://149.28.77.218/stream";
 
 var janus = null;
 var screentest = null;
@@ -16,6 +16,13 @@ var localTracks = {}, localVideos = 0,
 	remoteTracks = {}, remoteVideos = 0;
 var spinner = null;
 
+
+
+var textroom = null;
+var myusername = null;
+var myid = null;
+var participants = {}
+var transactions = {}
 
 // Just an helper to generate random usernames
 function randomString(len, charSet) {
@@ -290,81 +297,7 @@ $(document).ready(function () {
 										localVideos = 0;
 									}
 								});
-							janus.attach(
-								{
-									plugin: "janus.plugin.textroom",
-									opaqueId: opaqueId,
-									success: function (pluginHandle) {
-										$('#details').remove();
-										textroom = pluginHandle;
-										Janus.log("Plugin attached! (" + textroom.getPlugin() + ", id=" + textroom.getId() + ")");
-										// Setup the DataChannel
-										var body = { request: "setup" };
-										Janus.debug("Sending message:", body);
-										textroom.send({ message: body });
-										$('#start').removeAttr('disabled').html("Stop")
-											.click(function () {
-												$(this).attr('disabled', true);
-												janus.destroy();
-											});
-									},
-									error: function (error) {
-										console.error("  -- Error attaching plugin...", error);
-										bootbox.alert("Error attaching plugin... " + error);
-									},
-									onmessage: function (msg, jsep) {
-										Janus.debug(" ::: Got a message :::", msg);
-										if (msg["error"]) {
-											bootbox.alert(msg["error"]);
-										}
-										if (jsep) {
-											// Answer
-											textroom.createAnswer(
-												{
-													jsep: jsep,
-													media: { audio: false, video: false, data: true },	// We only use datachannels
-													success: function (jsep) {
-														Janus.debug("Got SDP!", jsep);
-														var body = { request: "ack" };
-														textroom.send({ message: body, jsep: jsep });
-													},
-													error: function (error) {
-														Janus.error("WebRTC error:", error);
-														bootbox.alert("WebRTC error... " + error.message);
-													}
-												});
-										}
-									},
-									ondataopen: function (data) {
-										Janus.log("The DataChannel is available!");
-										// Prompt for a display name to join the default room
-										$('#roomjoin').removeClass('hide').show();
-										$('#registernow').removeClass('hide').show();
-										$('#register').click(registerUsername);
-										$('#username').focus();
-									},
-									ondata: function (data) {
-										Janus.debug("We got data from the DataChannel!", data);
-										//~ $('#datarecv').val(data);
-										var json = JSON.parse(data);
-										var transaction = json["transaction"];
-										if (transactions[transaction]) {
-											// Someone was waiting for this
-											transactions[transaction](json);
-											delete transactions[transaction];
-											return;
-										}
-										var what = json["textroom"];
-										if (what === "message") {
-											// Incoming message: public or private?
-											var msg = json["text"];
-											msg = msg.replace(new RegExp('<', 'g'), '&lt');
-											msg = msg.replace(new RegExp('>', 'g'), '&gt');
-											var from = json["from"];
-											// todo
-										}
-									}
-								});
+
 						},
 						error: function (error) {
 							Janus.error(error);
@@ -381,73 +314,6 @@ $(document).ready(function () {
 	});
 });
 
-function registerUsername() {
-	var username = randomString(12)
-	myid = randomString(12);
-	var transaction = randomString(12);
-	var register = {
-		textroom: "join",
-		transaction: transaction,
-		room: myroom,
-		username: myid,
-		display: username
-	};
-	myusername = username;
-	transactions[transaction] = function (response) {
-		if (response["textroom"] === "error") {
-			// Something went wrong
-			if (response["error_code"] === 417) {
-				// This is a "no such room" error: give a more meaningful description
-				bootbox.alert(
-					"<p>Apparently room <code>" + myroom + "</code> (the one this demo uses as a test room) " +
-					"does not exist...</p><p>Do you have an updated <code>janus.plugin.textroom.jcfg</code> " +
-					"configuration file? If not, make sure you copy the details of room <code>" + myroom + "</code> " +
-					"from that sample in your current configuration file, then restart Janus and try again."
-				);
-			} else {
-				bootbox.alert(response["error"]);
-			}
-			return;
-		}
-	};
-	textroom.data({
-		text: JSON.stringify(register),
-		error: function (reason) {
-			bootbox.alert(reason);
-		}
-	});
-}
-
-
-function sendData() {
-	var data = $('#datasend').val();
-	var message = {
-		textroom: "message",
-		transaction: randomString(12),
-		room: myroom,
-		text: data,
-	};
-	// Note: messages are always acknowledged by default. This means that you'll
-	// always receive a confirmation back that the message has been received by the
-	// server and forwarded to the recipients. If you do not want this to happen,
-	// just add an ack:false property to the message above, and server won't send
-	// you a response (meaning you just have to hope it succeeded).
-	textroom.data({
-		text: JSON.stringify(message),
-		error: function (reason) { bootbox.alert(reason); },
-		success: function () { $('#datasend').val(''); }
-	});
-}
-
-function checkEnterShare(field, event) {
-	var theCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
-	if (theCode == 13) {
-		preShareScreen();
-		return false;
-	} else {
-		return true;
-	}
-}
 
 function preShareScreen() {
 	if (!Janus.isExtensionEnabled()) {

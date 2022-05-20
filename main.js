@@ -414,7 +414,7 @@ function addItem(item, isUndo) {
     }
 
     const e = document.createElement("img");
-    e.src = 'img/' + item + '.png';
+    e.src = 'img/components/' + item + '.png';
     e.classList.add('item-image');
     const boxRef = activeItemBox;
     const boxBoxRef = activeItemBoxBoxElement;
